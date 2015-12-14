@@ -1,0 +1,281 @@
+<resources>
+    <string name="century">fonts/century.ttf</string>
+    <string name="app_name">Calculadora FRAX</string>
+
+    <string name="texto_login">Ingrese  la clave  para acceder  a la aplicación</string>
+    <string name="action_settings">Settings</string>
+    <string name="code">
+        Referencia:
+Consultado: 20 05 2015.
+        International Osteoporosis Foundation. Calcium. [en línea] Disponible en:\n\n http://www.iofbonehealth.org/osteoporosis-musculoskeletal-disorders/osteoporosis/prevention/calcium
+Consultado: 21 09 2015.
+
+    </string>
+    <string-array name="age">
+        <item>1 a 3 años</item>
+        <item>4 a 8 años</item>
+        <item>9 a 13 años</item>
+        <item>14 a 18 años</item>
+        <item>19 a 50 años</item>
+        <item>51 a 70 años</item>
+        <item>Más de 71 años</item>
+    </string-array>
+
+    <string-array name="foodGroup">
+        <item> Crema, espesa </item>
+        <item> Crema, rala </item>
+        <item> Crema, sustituto no lácteo, en polvo </item>
+        <item> Leche de burra, fluida </item>
+        <item> Leche de cabra, fluida </item>
+        <item> Leche de vaca, chocolatada, fluida, baja en grasa </item>
+        <item> Leche de vaca, con cocoa, fluida </item>
+        <item> Leche de vaca, condensada, C/azúcar, enlat. </item>
+        <item> Leche de vaca, descremada C/vit A, en polvo </item>
+        <item> Leche de vaca, descremada C/vit A, en polvo instantánea </item>
+        <item> Leche de vaca, descremada C/vit A, fluida (1% grasa) </item>
+        <item> Leche de vaca, descremada S/vit A, en polvo </item>
+        <item> Leche de vaca, descremada, en polvo (PL 480) </item>
+        <item> Leche de vaca, íntegra, en polvo </item>
+        <item> Leche de vaca, íntegra, evaporada C/vit A, enlat. </item>
+        <item> Leche de vaca, íntegra, fluida (3.25% grasa) </item>
+        <item> Leche de vaca, íntegra, semidescrema (2% grasa) , fluida </item>
+        <item> Leche de vaca, íntegra, semidescrema (2% grasa) , fortificada, fluida </item>
+        <item> Queso amarillo, paste &amp; proces., para untar </item>
+        <item> Queso amarillo, paste &amp; proces., rodajas </item>
+        <item> Queso amarillo, paste &amp; proces., rodajas, bajo en grasa </item>
+        <item> Queso amarillo, paste &amp; proces., rodajas, C/pimiento </item>
+        <item> Queso blanco (Panamá) </item>
+        <item> Queso blanco fresco, leche de cabra </item>
+        <item> Queso blanco fresco, leche descremada </item>
+        <item> Queso blanco fresco, leche íntegra </item>
+        <item> Queso blanco fresco, leche semidescremada </item>
+        <item> Queso cottage, C/crema </item>
+        <item> Queso crema o de capas </item>
+        <item> Queso duro o seco, leche íntegra </item>
+        <item> Queso gouda </item>
+        <item> Queso mozarela, leche descremada </item>
+        <item> Queso mozarela, leche íntegra </item>
+        <item> Queso oreado, leche descremada </item>
+        <item> Queso oreado, leche íntegra </item>
+        <item> Queso oreado, leche semidescremada </item>
+        <item> Queso parmesano, duro </item>
+        <item> Queso parmesano, gratinado </item>
+        <item> Queso tipo camembert </item>
+        <item> Queso tipo chedar </item>
+        <item> Queso tipo cuajada, fresco </item>
+        <item> Queso tipo feta </item>
+        <item> Queso tipo foundue </item>
+        <item> Queso tipo Moterrey </item>
+        <item> Queso tipo Muenster </item>
+        <item> Queso tipo quesillo, fresco </item>
+        <item> Queso tipo requesón </item>
+        <item> Queso tipo ricotta, descremado </item>
+        <item> Queso tipo riccotta, leche íntegra </item>
+        <item> Queso tipo suizo </item>
+        <item> Queso tipo suizo, bajo en grasa </item>
+        <item> Suero ácido de leche </item>
+        <item> Suero dulce de leche </item>
+        <item> Yogurt, leche descremada, natural </item>
+        <item> Yogurt, leche descremada, sabor chocolate </item>
+        <item> Yogurt, leche descremada, sabor frutas </item>
+        <item> Yogurt, leche íntegra, natural </item>
+        <item> Huevo de gallina, entero, crudo </item>
+        <item> Huevo de gallina, entero, en polvo </item>
+        <item> Huevo de gallina, yema, polvo </item>
+        <item> Huevo de iguana, crudo </item>
+        <item> Camarón seco, salado </item>
+        <item> Camaroncillo seco, salado </item>
+        <item> Cangrejo cocido </item>
+        <item> Caviar granulado, negro o rojo </item>
+        <item> Jutes </item>
+        <item> Bacalao fresco </item>
+        <item> Bonito, seco, salado </item>
+        <item> Pejerrey, fresco </item>
+        <item> Pejesapo, cocido </item>
+        <item> Salmón rosado enlatado </item>
+        <item> Sardina enlatada en aceite </item>
+        <item> Sardina enlatada en tomate </item>
+        <item> Pescado seco salado </item>
+        <item> Pescado seco pequeño, preparado con sal </item>
+        <item> Frijol blanco, grano seco </item>
+        <item> Frijol caupi o costeño, grano seco </item>
+        <item> Frijol quimbolito o frijol de arroz, grano seco </item>
+        <item> Frijol soya, grano seco </item>
+        <item> Garbanzo, grano seco </item>
+        <item> Harina de frijol soya </item>
+        <item> Leche de soya </item>
+        <item> Almendra seca </item>
+        <item> Almendra seca, tostada, con sal </item>
+        <item> Avellana seca </item>
+        <item> Nuez del Brasil </item>
+        <item> Semilla de ajonjolí </item>
+        <item> Semilla de chan </item>
+        <item> Apazote/epazote </item>
+        <item> Berro crudo </item>
+        <item> Hojas de Bledo/amarantoe </item>
+        <item> Flores de Busnay </item>
+        <item> Hojas de camote/batata </item>
+        <item> Hojas de chaya o chiscaquil </item>
+        <item> Chile cobanero de Guatemala, seco </item>
+        <item> Hojas y punta de chipilin </item>
+        <item> Col china </item>
+        <item> Escarola/achicoria rizada </item>
+        <item> Espinaca cocida con sal y escurrida </item>
+        <item> Frijol verde toda variedad </item>
+        <item> Cogollos de Izote, itabo </item>
+        <item> Harina o almidón de yuca </item>
+        <item> Higo fruta deshidratada </item>
+        <item> Tamarindo </item>
+        <item> Amaranto, grano seco </item>
+        <item> Avena instantánea con banano </item>
+        <item> Avena instantánea con especies y canela </item>
+        <item> Avena instantánea con, con fruta y crema </item>
+        <item> Avena instantánea con miel </item>
+        <item> Avena instantánea fortificada </item>
+        <item> All Bran, desayuno </item>
+        <item> Cereal desayuno, Nesquick chocolate </item>
+        <item> Bebida malteada natural, en polvo </item>
+        <item> Helado crema, ice cream, vainilla, sin azúcar </item>
+        <item> Helado crema, ice cream, fresa </item>
+        <item> Helado crema, ice cream, chocolate </item>
+    </string-array>
+
+    <string-array name="numberGroup">
+        <item>65</item>
+        <item>96</item>
+        <item>22</item>
+        <item>126</item>
+        <item>134</item>
+        <item>109</item>
+        <item>105</item>
+        <item>284</item>
+        <item>1257</item>
+        <item>1231</item>
+        <item>119</item>
+        <item>1257</item>
+        <item>1257</item>
+        <item>912</item>
+        <item>261</item>
+        <item>113</item>
+        <item>117</item>
+        <item>143</item>
+        <item>562</item>
+        <item>552</item>
+        <item>684</item>
+        <item>614</item>
+        <item>643</item>
+        <item>140</item>
+        <item>687</item>
+        <item>783</item>
+        <item>415</item>
+        <item>32</item>
+        <item>80</item>
+        <item>2274</item>
+        <item>700</item>
+        <item>782</item>
+        <item>505</item>
+        <item>1004</item>
+        <item>751</item>
+        <item>752</item>
+        <item>1184</item>
+        <item>1109</item>
+        <item>388</item>
+        <item>721</item>
+        <item>718</item>
+        <item>493</item>
+        <item>476</item>
+        <item>746</item>
+        <item>717</item>
+        <item>162</item>
+        <item>92</item>
+        <item>272</item>
+        <item>207</item>
+        <item>772</item>
+        <item>961</item>
+        <item>103</item>
+        <item>47</item>
+        <item>199</item>
+        <item>88</item>
+        <item>138</item>
+        <item>121</item>
+        <item>53</item>
+        <item>231</item>
+        <item>284</item>
+        <item>421</item>
+        <item>684</item>
+        <item>872</item>
+        <item>423</item>
+        <item>275</item>
+        <item>1791</item>
+        <item>160</item>
+        <item>112</item>
+        <item>105</item>
+        <item>109</item>
+        <item>213</item>
+        <item>382</item>
+        <item>240</item>
+        <item>122</item>
+        <item>3471</item>
+        <item>240</item>
+        <item>110</item>
+        <item>218</item>
+        <item>277</item>
+        <item>105</item>
+        <item>188</item>
+        <item>597</item>
+        <item>216</item>
+        <item>266</item>
+        <item>149</item>
+        <item>160</item>
+        <item>975</item>
+        <item>631</item>
+        <item>304</item>
+        <item>117</item>
+        <item>278</item>
+        <item>403</item>
+        <item>111</item>
+        <item>234</item>
+        <item>142</item>
+        <item>287</item>
+        <item>136</item>
+        <item>100</item>
+        <item>136</item>
+        <item>213</item>
+        <item>342</item>
+        <item>148</item>
+        <item>162</item>
+        <item>74</item>
+        <item>153</item>
+        <item>268</item>
+        <item>239</item>
+        <item>314</item>
+        <item>244</item>
+        <item>357</item>
+        <item>389</item>
+        <item>333</item>
+        <item>298</item>
+        <item>133</item>
+        <item>120</item>
+        <item>109</item>
+    </string-array>
+
+    <string-array name="edad">
+        <item>50 a 54 años</item>
+        <item>55 a 59 años</item>
+        <item>60 a 64 años</item>
+        <item>65 a 69 años</item>
+        <item>70 a 74 años</item>
+        <item>75 a 79 años</item>
+        <item>80 a 84 años</item>
+        <item>85 a 90 años</item>
+        <item>Más de 90 años</item>
+    </string-array>
+    <string name="valor">
+* El valor fuera de los paréntesis indica el porcentaje de riesgo de fractura en los próximos 10 años.\n\nHay que tener en cuenta que el rango dentro de los paréntesis no es una estimación de confianza, sino que es consecuencia del diferente peso de los factores de riesgo.
+    </string>
+    <string name="referencia">
+       Organización Mundial de la Salud (OMS). FRAX® Herramienta de Evaluación de Riesgo de Fractura.\nhttp://www.sheffield.ac.uk/FRAX/index.jsp?lang=sp
+    </string>
+
+
+</resources>

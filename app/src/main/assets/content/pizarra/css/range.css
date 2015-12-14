@@ -1,0 +1,35 @@
+@charset "utf-8";
+input[type="range"].range {
+			cursor: pointer;
+			width:90px !important;
+			-webkit-appearance: none;
+			z-index: 200;
+			width:50px;
+			border: 1px solid #e6e6e6;
+			background-color: #e6e6e6;
+			background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e6e6e6), to(#d2d2d2));
+			background-image: -webkit-linear-gradient(right, #e6e6e6, #d2d2d2);
+			background-image: -moz-linear-gradient(right, #e6e6e6, #d2d2d2);
+			background-image: -ms-linear-gradient(right, #e6e6e6, #d2d2d2);
+			background-image: -o-linear-gradient(right, #e6e6e6, #d2d2d2);
+		}
+		
+		input[type="range"].range:focus{
+			border: 0 !important; outline: none !important;
+		}
+		
+		input[type="range"].range::-webkit-slider-thumb  {
+			-webkit-appearance: none;
+			width: 10px;
+			height: 10px; background-color: #555;
+			background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#4DDBFF), to(#00CCFF));
+			background-image: -webkit-linear-gradient(right, #4DDBFF, #00CCFF);
+			background-image: -moz-linear-gradient(right, #4DDBFF, #00CCFF);
+			background-image: -ms-linear-gradient(right, #4DDBFF, #00CCFF);
+			background-image: -o-linear-gradient(right, #4DDBFF, #00CCFF);
+		}
+	
+	
+		
+		
+

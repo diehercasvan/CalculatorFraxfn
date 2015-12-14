@@ -1,0 +1,472 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayout"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Cálculo de requerimientos de calcio *⁶"
+        android:id="@+id/textView19"
+        android:textSize="20dip"
+        android:textColor="#ff7178ba"
+        android:fontFamily="@string/century"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView19"
+        android:weightSum="1"
+        android:baselineAligned="false"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="25dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/containerCalculater"
+            android:layout_margin="5dp"
+            android:background="#ffffffff"
+            android:weightSum="1">
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1"
+                android:id="@+id/tableContainer"
+                android:layout_margin="10dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Seleccione las siguientes opciones  para realizar su cálculo:"
+                        android:id="@+id/textView"
+                        android:layout_margin="2dp"
+                        android:fontFamily="@string/century"
+                        android:textSize="10dip"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_column="1"
+                        android:layout_span="2" />
+                </TableRow>
+
+                <TableRow android:layout_height="200dp">
+
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Sexo"
+                        android:padding="3dip"
+                        android:id="@+id/text"
+                        android:textColor="#7178BA"
+                        android:fontFamily="@string/century"
+                        android:layout_width="wrap_content" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioSex">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hombre"
+                            android:id="@+id/rbtHombre"
+                            android:layout_column="3"
+                            android:checked="false"
+                            android:fontFamily="@string/century"
+                            android:buttonTint="#26a69a"
+                            android:buttonTintMode="src_atop" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mujer"
+                            android:id="@+id/rbtMujer"
+                            android:layout_column="4"
+                            android:checked="false"
+                            android:fontFamily="@string/century"
+                            android:buttonTint="#26a69a"
+                            android:buttonTintMode="src_atop" />
+
+                    </RadioGroup>
+
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#ffd9d9d9" />
+
+                <TableRow>
+                    <TextView
+                        android:layout_column="1"
+                        android:text="Edad"
+                        android:padding="3dip"
+                        android:id="@+id/lbltxt2"
+                        android:textColor="#7178BA"
+                        android:fontFamily="@string/century"
+                        android:layout_width="wrap_content" />
+
+                    <Spinner
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/spinner"
+                        android:spinnerMode="dropdown" />
+
+                </TableRow>
+                <View
+                    android:layout_height="1dip"
+                    android:background="#ffd9d9d9" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <View
+                        android:layout_height="1dip"
+                        android:background="#ffd9d9d9" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Se encuentra en embarazo o en periodo de lactancia"
+                        android:id="@+id/txtInfoPregnancy"
+                        android:layout_column="1"
+                        android:layout_span="2"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:visibility="gone" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioPregnancy"
+                        android:layout_column="1"
+                        android:layout_span="2"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sì"
+                            android:id="@+id/radioButton"
+                            android:layout_column="3"
+                            android:checked="false"
+                            android:fontFamily="@string/century"
+                            android:buttonTint="#26a69a"
+                            android:buttonTintMode="src_atop" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No"
+                            android:id="@+id/radioButton2"
+                            android:layout_column="4"
+                            android:checked="false"
+                            android:fontFamily="@string/century"
+                            android:buttonTint="#26a69a"
+                            android:buttonTintMode="src_atop" />
+                    </RadioGroup>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Calcular"
+                        android:id="@+id/btnCalculater"
+                        android:background="#7178BA"
+                        android:textColor="#ffffffff"
+                        android:layout_column="1"
+                        android:layout_margin="10dp"
+                        android:layout_span="2"
+                        android:enabled="true" />
+                </TableRow>
+                <View
+                    android:layout_height="1dip"
+                    android:background="#ffd9d9d9" />
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/table">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="*Requerimiento diario de calcio:"
+                        android:id="@+id/textView7"
+                        android:layout_column="1"
+                        android:layout_span="2"
+                        android:layout_margin="10dp"
+                        android:gravity="left" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/txtCalcium"
+                        android:layout_column="1"
+                        android:layout_span="2"
+                        android:text="0 mg"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:textSize="16dip"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Requerimiento diario de vitamina D:"
+                        android:id="@+id/textView5"
+                        android:layout_column="1"
+                        android:layout_span="2"
+                        android:layout_margin="10dp"
+                        android:gravity="left" />
+                </TableRow>
+                <View
+                    android:layout_height="1dip"
+                    android:background="#ffd9d9d9" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/txtVitamin"
+                        android:layout_column="1"
+                        android:layout_span="2"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:text="0 UI"
+                        android:textSize="16dip"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/code"
+                        android:id="@+id/textView3"
+                        android:layout_column="1"
+                        android:layout_span="2"
+                        android:textSize="10sp" />
+                </TableRow>
+
+            </TableLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/tableLayout">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Su ingesta actual es de:"
+                        android:id="@+id/textView13"
+                        android:layout_column="0"
+                        android:fontFamily="@string/century"
+                        android:textIsSelectable="false"
+                        android:textSize="18dip"
+                        android:textStyle="bold"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_marginLeft="5dp" />
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/progressBar"
+                        android:layout_column="1"
+                        android:background="#FFFFFF"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:progressDrawable="@drawable/style_progressbar"
+                        android:max="100" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="0%"
+                        android:fontFamily="@string/century"
+                        android:id="@+id/txtInfoProgressBar"
+                        android:layout_column="2"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center" />
+
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#ffd9d9d9" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Su ingesta de calcio diaria recomendada es de:"
+                        android:id="@+id/textView2"
+                        android:layout_column="0"
+                        android:fontFamily="@string/century"
+                        android:textIsSelectable="false"
+                        android:textSize="18dip"
+                        android:textStyle="bold"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_margin="5dp" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="0 mg"
+                        android:id="@+id/txtCalciumData"
+                        android:layout_column="0"
+                        android:fontFamily="@string/century"
+                        android:layout_margin="5dp"
+                        android:textIsSelectable="false"
+                        android:textSize="18dip"
+                        android:textStyle="bold"
+                        android:layout_gravity="center" />
+
+
+                </TableRow>
+                <TableRow android:background="#597178ba"
+                    android:layout_width="fill_parent"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="*Contenido de calcio en mg por porción de 100 g o 100 mL"
+                        android:id="@+id/textView6"
+                        android:layout_column="0"
+                        android:fontFamily="@string/century"
+                        android:layout_gravity="center_vertical"
+                        android:layout_span="3"
+                        android:textSize="15dip"
+                        android:gravity="center"
+                        android:layout_margin="5dp" />
+
+
+                </TableRow>
+                <TableRow android:background="#597178ba"
+                    android:layout_width="fill_parent"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Grupos de alimentos"
+                        android:id="@+id/textView11"
+                        android:layout_column="0"
+                        android:fontFamily="@string/century"
+                        android:layout_gravity="center_vertical"
+
+                        android:textSize="20dip"
+                        android:gravity="left"
+                        android:layout_margin="5dp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinGroup"
+                        android:layout_column="1" />
+
+
+                </TableRow>
+                <View
+                    android:layout_height="1dip"
+                    android:background="#ffd9d9d9" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></TableRow>
+
+            </TableLayout>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_below="@+id/tableLayout"
+    android:layout_margin="20dp">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tableGroupFood"
+                android:gravity="center"></TableLayout>
+
+</ScrollView>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

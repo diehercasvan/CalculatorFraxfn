@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+<title>Referencias</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<link href="css/materialize.min.css" rel="stylesheet" type="text/css" />
+<link href="css/estilos.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+body {/*background-image: url(images/fondo_factores.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+	background-attachment: fixed;*/
+	background: none;
+	display: block;
+	min-height: 680px;
+}
+#titulo {
+	font-size: 1.5em;
+	color: #7178BB;
+	text-align: right;
+}
+</style>
+<script type="text/javascript">
+$(document).ready(function(e) {
+	//run once at the beginning
+	resizeAnimation();
+});
+
+function resizeAnimation() {
+    //get current window size
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+
+    //get the project main element that contains all scenes
+    var currentSceneEl = document.body.children[0];
+
+    //get the current size
+    var scene_w = currentSceneEl.offsetWidth;
+    var scene_h = currentSceneEl.offsetHeight;
+
+    //calculate the scale factor
+    var factor_w = width / scene_w;
+    var factor_h = height / scene_h;
+
+    //select the minimum of the above, so it is stretched to the screen
+    //but does not change the aspect ratio
+    var factor = Math.min(factor_w, factor_h);
+
+    //set transform origin to 0,0
+    currentSceneEl.style['transformOrigin'] = '0 0';
+    currentSceneEl.style['webkitTransformOrigin'] = '0 0';
+
+    //scale
+    currentSceneEl.style['transform'] = 'scale(' + factor + ',' + factor + ')';
+    currentSceneEl.style['webkitTransform'] = 'scale(' + factor + ',' + factor + ')';
+}
+
+//optional: rescale every time the window size is changed
+window.onresize = function() {
+    resizeAnimation();
+}
+</script>
+</head>
+<body>
+<!--<div>-->
+<div class="row">
+  <div class="col s12 m12 l12 right-align"> <span id="titulo">Referencias</span></div>
+</div>
+<div class="row">
+  <div class="col s12 m12 l12">
+    <ol>
+      <li>Mescher  AL. Bone. en: Mescher AL. eds. Junqueira's  Basic Histology: Text &amp; Atlas, 13a. Ed.  New York, NY: McGraw-Hill; 2013. [en línea]  Disponible en: <a href="http://accessmedicine.mhmedical.com.ezproxy.unbosque.edu.co/content.aspx?bookid=574&amp;Sectionid=42524594">http://accessmedicine.mhmedical.com.ezproxy.unbosque.edu.co/content.aspx?bookid=574&amp;Sectionid=42524594</a> Consultado: 24 08 2015.<br />
+        <a href="http://nof.org/files/nof/public/content/file/344/upload/159.pdf">http://nof.org/files/nof/public/content/file/344/upload/159.pdf</a><br />
+        <br />
+      </li>
+      <li>National  Osteoporosis Foundation. Clinician´s Guide to Prevention and Treatment of  Osteoporosis. 2014. [en línea] Disponible en: <a href="http://nof.org/files/nof/public/content/file/2791/upload/919.pdf">http://nof.org/files/nof/public/content/file/2791/upload/919.pdf</a><br />
+        <br />
+      </li>
+      <li>Bethel  M. Lohr K. Carbone L. Machua W, et al. Osteoporosis. [en línea]  Disponible en: <a href="http://emedicine.medscape.com/article/330598-overview">http://emedicine.medscape.com/article/330598-overview</a><br />
+        Consultado: 24 08 2015.<br />
+        <br />
+      </li>
+      <li>Frampton J. Perry C. Ibandronate. Drugs 2008; 68 (18): 2683-2707.<br />
+        <br />
+      </li>
+      <li>FRAX ® Herramienta de Evaluación de  Riesgo de Fractura desarrollada por la Organización Mundial de la Salud (OMS).[en  línea]  Disponible en: <a href="https://www.shef.ac.uk/FRAX/charts.aspx?lang=sp">https://www.shef.ac.uk/FRAX/charts.aspx?lang=sp</a><br />
+        <br />
+      </li>
+      <li>Instituto  de Nutrición de Centroamérica y Panamá (IMCAP). Organización Panamericana de  la Salud (OPS). Tabla de Composición de Alimentos de Centroamérica. [en  línea] Disponible en: <a href="http://www.incap.int/biblio/index.php/es/publi-a-la-venta/843-tabla-de-composicion-de-alimentos-de-centroamerica2">http://www.incap.int/biblio/index.php/es/publi-a-la-venta/843-tabla-de-composicion-de-alimentos-de-centroamerica2</a><br />
+        Consultado: 20 05 2015.</li>
+    </ol>
+  </div>
+</div>
+<div class="row">
+  <div class="col s12 m12 l12 right-align"> <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </div>
+</div>
+</body>
+</html>

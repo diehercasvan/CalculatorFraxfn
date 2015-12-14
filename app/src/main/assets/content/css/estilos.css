@@ -1,0 +1,116 @@
+@font-face {
+	font-family: 'CenturyGothic';
+	src: url('../font/centurygothic/CenturyGothic.eot');
+	src: url('../font/centurygothic/CenturyGothic.eot?#iefix') format('embedded-opentype'), url('../font/centurygothic/CenturyGothic.woff2') format('woff2'), url('../font/centurygothic/CenturyGothic.woff') format('woff'), url('../font/centurygothic/CenturyGothic.ttf') format('truetype'), url('../font/centurygothic/CenturyGothic.svg#CenturyGothic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+body, html {
+	margin: 0;
+	padding: 0;	
+}
+html{
+	/*background-color:#DCDCEA;*/
+}
+body {
+	font-family: 'CenturyGothic';
+	font-size: 15px;
+	background-color:#DCDCEA;
+	background-image: url(../images/fondo_general.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: none;
+	overflow:hidden;	
+}
+/*.container{
+	
+}*/
+.row {
+	margin-bottom: 10px;
+}
+.titulo {
+	font-size: 1.33em;
+	color: #7178BB;
+	background-image: url(../images/logo_roche.png), url(../images/fondo_titulo.png);
+	background-repeat: no-repeat, repeat-y;
+	background-attachment: fixed, fixed;
+	background-position: 950px 2%, left center;
+	height: 50px;
+	margin-top: 10px;
+	padding-left: 15px !important;
+}
+.titulo_menu {
+	font-size: 1.2em;
+	color: #8F95C9;
+	padding-bottom: 5px;
+	background-image: url(../images/linea_menu.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	margin-left: -256px;
+	padding-left: 15px;
+}
+.menu_item {
+	font-size: 1em;
+	color: #0E9FDA;
+	padding-bottom: 5px;
+	background-image: url(../images/linea_menu.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	margin-left: -256px;
+	padding-left: 20px;
+}
+.menu_ref {
+	font-size: 0.9em;
+	color: #0E9FDA;
+	padding-bottom: 5px;
+	background-image: url(../images/linea_ref.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	margin-left: 0px/*-256px*/;
+	padding-left: 10px;
+	display: none;
+}
+.menu_pizarra{
+	font-size: 1.1em;
+	color: #0E9FDA;
+	/*padding-bottom: 5px;*/
+	background-image: url(../images/linea_ref.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	margin-left: 0px/*-256px*/;
+	padding-left: 10px;
+	display: none;
+	position:fixed;
+	bottom:100px;
+	width:10%;
+	z-index:5;
+}
+.menu_sep {
+	padding-left: 20px;
+}
+#frm_contenido {
+	background-color: #FFF;
+	display: none;
+	/*position:absolute;
+	left:213px;
+	top:77px;*/
+	width: 760px;
+	height: 680px;
+	border:#8F95C9 1px solid;
+}
+#iframepizarra {
+	width: 1024px;
+	height: 680px;
+	position: absolute;
+	background: transparent !important;
+	z-index: 3;
+	left: 0px;
+	top: 70px;
+	display: none;
+	overflow:hidden;
+}
+#iframepizarra iframe {
+	width: 1024px;
+	height: 680px;
+}

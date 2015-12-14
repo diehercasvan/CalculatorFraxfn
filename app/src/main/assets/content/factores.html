@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="target-densitydpi=device-dpi, initial-scale=1.0,user-scalable=yes"/>
+<title>Factores de riesgo</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<link href="css/materialize.min.css" rel="stylesheet" type="text/css" />
+<link href="css/estilos.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+
+@font-face {
+	font-family: 'CenturyGothic';
+	src: url('font/centurygothic/CenturyGothic.eot');
+	src: url('font/centurygothic/CenturyGothic.eot?#iefix') format('embedded-opentype'), url('font/centurygothic/CenturyGothic.woff2') format('woff2'), url('font/centurygothic/CenturyGothic.woff') format('woff'), url('font/centurygothic/CenturyGothic.ttf') format('truetype'), url('font/centurygothic/CenturyGothic.svg#CenturyGothic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+body {
+	/*background-image: none;*/
+	font-family: 'CenturyGothic';
+	background: #c9c9df;
+	background: -moz-linear-gradient(top, #fbfdfe 0%, #c9c9df 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fbfdfe), color-stop(100%, #c9c9df));
+	background: -webkit-linear-gradient(top, #fbfdfe 0%, #c9c9df 100%);
+	background: -o-linear-gradient(top, #fbfdfe 0%, #c9c9df 100%);
+	background: -ms-linear-gradient(top, #fbfdfe 0%, #c9c9df 100%);
+	background: linear-gradient(to bottom, #fbfdfe 0%, #c9c9df 100%);
+ 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbfdfe', endColorstr='#c9c9df', GradientType=0 );		
+	display: block;	
+	background-image: url(images/fondo_factores.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+    
+	left:0;
+	top:0;
+	bottom:0;
+	
+}
+/*#contenedor{
+	min-height:100%;
+}*/
+#encabezado{
+	    /* text-align: right; */
+    /* padding-right: 5px; */
+    width: 80%;
+    margin: auto;
+}
+
+
+
+.btn-large {
+	width: 90%;
+	margin-top: 5%;
+}
+/*.modal {
+	width: 98%;
+	height: 98%;
+}*/
+.modal.modal-fixed-footer {
+	width: 98%;
+	height: 80%;
+	max-height: 80%;	
+}
+/*.modal-content{
+	background-image: url(images/fondo_factores.png);
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-position: right bottom;
+	background-attachment: fixed;
+}*/
+.modal-content, .modal-content form label, .modal-action {
+	color: #7178BB;
+}
+
+#titulo {
+    font-size: 1em;
+    color: #7178BB;
+    text-align: right;}
+</style>
+<script type="text/javascript">
+$(document).ready(function(e) {
+	//run once at the beginning
+	resizeAnimation();
+	
+	$('.modal-trigger').leanModal({
+		dismissible: false, // Modal can be dismissed by clicking outside of the modal
+		opacity: 0.2, // Opacity of modal background
+		in_duration: 200, // Transition in duration
+		out_duration: 200, // Transition out duration
+		ready: function() {  }, // Callback for Modal open
+		complete: function() {  } // Callback for Modal close
+		}
+	);
+});
+
+function resizeAnimation() {
+    //get current window size
+    var width = window.innerWidth;
+    var height = window.innerHeight;
+
+    //get the project main element that contains all scenes
+    var currentSceneEl = document.body.children[0];
+
+    //get the current size
+    var scene_w = currentSceneEl.offsetWidth;
+    var scene_h = currentSceneEl.offsetHeight;
+
+    //calculate the scale factor
+    var factor_w = width / scene_w;
+    var factor_h = height / scene_h;
+
+    //select the minimum of the above, so it is stretched to the screen
+    //but does not change the aspect ratio
+    var factor = Math.min(factor_w, factor_h);
+
+    //set transform origin to 0,0
+    currentSceneEl.style['transformOrigin'] = '0 0';
+    currentSceneEl.style['webkitTransformOrigin'] = '0 0';
+
+    //scale
+    currentSceneEl.style['transform'] = 'scale(' + factor + ',' + factor + ')';
+    currentSceneEl.style['webkitTransform'] = 'scale(' + factor + ',' + factor + ')';
+}
+
+//optional: rescale every time the window size is changed
+window.onresize = function() {
+    resizeAnimation();
+}
+</script>
+</head>
+<body>
+<!--<div>-->
+<div id="encabezado"> <span id="titulo">Factores de riesgo<sup>2,3</sup></span><br>
+    <span id="subtitulo"></span>
+  </div>
+
+<div class="row valign-wrapper" >
+  <div class="col s12 m12 l12 center-align valign">
+    <button class="btn-large waves-effect indigo lighten-1 modal-trigger" data-target="modal1">Factores de riesgo para osteoporosis y fracturas por osteoporosis</button>
+    <br />
+    <br />
+    <button class="btn-large waves-effect indigo lighten-2 modal-trigger" data-target="modal2">Factores de riesgo para caídas en pacientes adultos mayores</button>
+    <br />
+    <br />
+    <button class="btn-large waves-effect indigo lighten-3 modal-trigger" data-target="modal3">Factores de riesgo para osteoporosis secundaria</button>
+  </div>
+</div>
+<div class="row">
+  <div class="col s12 m12 l12 right-align"> <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </div>
+</div>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal modal-fixed-footer">
+  <div class="modal-content">
+    <h5>Factores de riesgo para osteoporosis y fracturas por osteoporosis<sup>2,3</sup></h5>
+    <form>
+      <br />
+      <input name="fac" id="fac1" class="filled-in" type="checkbox" value="" />
+      <label for="fac1">Edad </label>
+      <br />
+      <input name="fac" id="fac2" class="filled-in" type="checkbox" value="" />
+      <label for="fac2">Sexo</label>
+      <br />
+      <input name="fac" id="fac3" class="filled-in" type="checkbox" value="" />
+      <label for="fac3">Raza</label>
+      <br />
+      <input name="fac" id="fac4" class="filled-in" type="checkbox" value="" />
+      <label for="fac4">Historia familiar de osteoporosis</label>
+      <br />
+      <input name="fac" id="fac5" class="filled-in" type="checkbox" value="" />
+      <label for="fac5">Historia materna de fractura de cadera</label>
+      <br />
+      <input name="fac" id="fac6" class="filled-in" type="checkbox" value="" />
+      <label for="fac6">Menopausia precoz</label>
+      <br />
+      <input name="fac" id="fac7" class="filled-in" type="checkbox" value="" />
+      <label for="fac7">Estilos de vida: tabaco, consumo de alcohol, sedentarismo</label>
+      <br />
+      <input name="fac" id="fac8" class="filled-in" type="checkbox" value="" />
+      <label for="fac8">Síndromes de malabsorción por deficiencia de calcio y vitamina D </label>
+      <br />
+      <input name="fac" id="fac9" class="filled-in" type="checkbox" value="" />
+      <label for="fac9">Historia de fractura con trauma de baja intensidad</label>
+      <br />
+      <input name="fac" id="fac10" class="filled-in" type="checkbox" value="" />
+      <label for="fac10">Signos de fractura vertebral (cifosis senil, disminución de la altura)</label>
+      <br />
+      <input name="fac" id="fac11" class="filled-in" type="checkbox" value="" />
+      <label for="fac11">Condiciones médicas asociadas que incrementen el riesgo de osteoporosis</label>
+      <br />
+      <input name="fac" id="fac12" class="filled-in" type="checkbox" value="" />
+      <label for="fac12">Medicamentos (corticoides, anticonvulsivantes y anticoagulantes)</label>
+      <br />
+    </form>
+  </div>
+  <div class="modal-footer"> <a href="#" class="modal-action modal-close waves-effect btn-flat ">Cerrar</a> <a href="#" onclick="$('#modal1').closeModal();$('#modal2').openModal();" class="modal-action waves-effect btn-flat">Siguiente &gt;</a> </div>
+</div>
+<div id="modal2" class="modal modal-fixed-footer">
+  <div class="modal-content">
+    <h5>Factores de riesgo para caídas en pacientes adultos mayores<sup>2,3</sup></h5>
+    <form>
+      <br />
+      <input name="fac" id="fac13" class="filled-in" type="checkbox" value="" />
+      <label for="fac13">Alteraciones del equilibrio </label>
+      <br />
+      <input name="fac" id="fac14" class="filled-in" type="checkbox" value="" />
+      <label for="fac14">Hipotensión ortostática</label>
+      <br />
+      <input name="fac" id="fac15" class="filled-in" type="checkbox" value="" />
+      <label for="fac15">Atrofia muscular de miembros inferiores</label>
+      <br />
+      <input name="fac" id="fac16" class="filled-in" type="checkbox" value="" />
+      <label for="fac16">Desacondicionamiento físico</label>
+      <br />
+      <input name="fac" id="fac17" class="filled-in" type="checkbox" value="" />
+      <label for="fac17">Uso de medicamentos con efecto sedante</label>
+      <br />
+      <input name="fac" id="fac18" class="filled-in" type="checkbox" value="" />
+      <label for="fac18">Disminución de la agudeza visual</label>
+      <br />
+      <input name="fac" id="fac19" class="filled-in" type="checkbox" value="" />
+      <label for="fac19">Disminución de la agudeza auditiva</label>
+      <br />
+      <input name="fac" id="fac20" class="filled-in" type="checkbox" value="" />
+      <label for="fac20">Alteración cognitiva</label>
+    </form>
+  </div>
+  <div class="modal-footer"> <a href="#" class="modal-action modal-close waves-effect btn-flat ">Cerrar</a> <a href="#" onclick="$('#modal2').closeModal();$('#modal3').openModal();" class="modal-action waves-effect btn-flat">Siguiente &gt;</a> <a href="#" onclick="$('#modal2').closeModal();$('#modal1').openModal();" class="modal-action waves-effect btn-flat">&lt; Anterior</a></div>
+</div>
+<div id="modal3" class="modal modal-fixed-footer">
+  <div class="modal-content">
+    <h5>Factores de riesgo para osteoporosis secundaria<sup>2,3</sup></h5>
+    <form>
+      <br />
+      <input name="fac" id="fac21" class="filled-in" type="checkbox" value="" />
+      <label for="fac21">Endocrinos: hipertiroidismo, hiperparatiroidismo, hipogonadismo, diabetes mellitus, enfermedad de Cushing, acromegalia, prolactinoma, insuficiencia adrenal.</label>
+      <br />
+      <br />
+      <input name="fac" id="fac22" class="filled-in" type="checkbox" value="" />
+      <label for="fac22">Trastornos nutricionales y digestivos: enfermedad celíaca, enfermedad de colon irritable, desnutrición, baipás gástrico, enfermedad crónica del hígado, anorexia nerviosa.</label>
+      <br />
+      <br />
+      <input name="fac" id="fac23" class="filled-in" type="checkbox" value="" />
+      <label for="fac23">Trastornos renales: enfermedad renal crónica, hipercalciuria idiopática.</label>
+      <br />
+      <input name="fac" id="fac24" class="filled-in" type="checkbox" value="" />
+      <label for="fac24">Trastornos reumatológicos: artritis reumatoide, espondilitis anquilosante, LES.</label>
+      <br />
+      <input name="fac" id="fac25" class="filled-in" type="checkbox" value="" />
+      <label for="fac25">Trastornos hematológicos: mieloma múltiple, talasemia, leucemia, linfoma, hemofilia, enfermedad de células falciformes, mastocitosis sistémica.</label>
+      <br />
+      <br />
+      <input name="fac" id="fac26" class="filled-in" type="checkbox" value="" />
+      <label for="fac26">Trastornos genéticos: fibrosis quística, osteogénesis imperfecta, homocisteinuria, síndrome de Marfan, síndrome de Ehlers - Danlos, hemocromatosis.</label>
+      <br />
+      <br />
+      <input name="fac" id="fac27" class="filled-in" type="checkbox" value="" />
+      <label for="fac27">Otros: porfiria, inmovilización, EPOC, nutrición parenteral.</label>
+    </form>
+  </div>
+  <div class="modal-footer"> <a href="#" class="modal-action modal-close waves-effect btn-flat ">Cerrar</a> <a href="#" onclick="$('#modal3').closeModal();$('#modal2').openModal();" class="modal-action waves-effect btn-flat">&lt; Anterior</a></div>
+</div>
+<!--</div>-->
+</body>
+</html>

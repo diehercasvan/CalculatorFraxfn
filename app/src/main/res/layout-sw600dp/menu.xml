@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="270dp"
+        android:id="@+id/Container_menu"
+        android:background="@drawable/degradado"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="3dp"
+        android:visibility="visible">
+
+        <ExpandableListView
+            android:id="@+id/explist_slidermenu"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:choiceMode="singleChoice"
+            android:divider="#FFF"
+            android:dividerHeight="0.5dp"
+            android:listSelector="@drawable/list_color_selector"
+            android:background="@null" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Container_menu"
+        android:layout_alignEnd="@+id/Container_menu"
+        android:gravity="center"
+        android:visibility="visible"
+        android:id="@+id/LinearLayout">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnHome"
+            android:src="@drawable/home"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/explist_slidermenu"
+            android:layout_margin="10dp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnClose"
+            android:src="@drawable/close"
+            android:layout_below="@+id/explist_slidermenu"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnReferences"
+            android:src="@drawable/references"
+            android:layout_below="@+id/explist_slidermenu"
+            android:layout_toStartOf="@+id/btnClose"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+
+</RelativeLayout>

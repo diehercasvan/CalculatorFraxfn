@@ -1,0 +1,36 @@
+<!DOCTYPE html >
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Pizarra</title>
+<link  rel="stylesheet" type="text/css" href="css/range.css">
+<link  rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/funciones.js"></script>
+<script type="text/javascript">
+$(document).ready(function(e) {
+	verMenuColor();
+});
+</script>
+</head>
+<body>
+<div id="menu">
+  <div id="selecColor">
+    <div id="tabla">
+      <table id="table">
+      </table>
+    </div>
+    <div id="slide">
+      <input  id="bsz" class='range' type='range' min='0' max='50' step='0.1'  >
+      <img id="clear" src="img/draft.png" width="25" height="25"/> 
+      <!--<img id="clear"  src="img/clear.png"  width="25" height="25"/>--> 
+    </div>
+  </div>
+</div>
+<div id="boton">
+  <input  type="button" class="BtnColors" onClick="verMenuColor()">
+</div>
+<!--Pizarra-->
+<canvas id="can" width="755" height="680">Su navegador no admite la pizarra</canvas>
+</body>
+</html>
