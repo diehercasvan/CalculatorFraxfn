@@ -30,7 +30,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity
             android:name="com.edibca.fraxfnGTRD.MainActivity"
             android:screenOrientation="landscape"
