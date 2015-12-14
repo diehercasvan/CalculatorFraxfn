@@ -1,6 +1,8 @@
-package com.edibca.fraxfn;
+package com.edibca.fraxfnGTRD;
 
 import android.app.Activity;
+
+import com.edibca.fraxfn.R;
 
 /**
  * Created by DIEGO CASALLAS on 28/09/2015.

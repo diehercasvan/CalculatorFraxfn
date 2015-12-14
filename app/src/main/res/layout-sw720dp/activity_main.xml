@@ -3,7 +3,7 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context="com.edibca.fraxfnGTRD.MainActivity">
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -131,7 +131,7 @@
         <fragment
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:name="com.edibca.fraxfn.Menu"
+            android:name="com.edibca.fraxfnGTRD.Menu"
             android:id="@+id/fragment"
             tools:layout="@layout/menu"
             android:layout_gravity="right"

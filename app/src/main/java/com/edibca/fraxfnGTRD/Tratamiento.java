@@ -1,4 +1,4 @@
-package com.edibca.fraxfn;
+package com.edibca.fraxfnGTRD;
 
 import android.app.Fragment;
 import android.content.Context;
@@ -17,16 +17,14 @@ import class_fraxfn.General;
 /**
  * Created by DIEGO CASALLAS on 11/09/2015.
  */
-public class Bone extends Fragment implements View.OnClickListener {
+public class Tratamiento extends Fragment implements View.OnClickListener {
     private View view;
     private WebView webView;
     private String sFile= General.FILE_URL;
     private Context context;
-
-    public Bone(){
+    public Tratamiento(){
 
         context=General.CONTEXT;
-
     }
 
     @Nullable
@@ -40,12 +38,11 @@ public class Bone extends Fragment implements View.OnClickListener {
         webView.getSettings().setJavaScriptEnabled(true);
         webView.getSettings().setUseWideViewPort(true);
         webView.getSettings().setLoadWithOverviewMode(true);
-        sFile += "hueso.html";
+        sFile += "tratamiento.html";
 
         webView.clearCache(true);
 
         webView.loadUrl(sFile);
-
 
         return view;
 
@@ -54,12 +51,5 @@ public class Bone extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View v) {
 
-        switch (v.getId())
-        {
-
-
-        }
-
     }
-
 }

@@ -1,4 +1,4 @@
-package com.edibca.fraxfn;
+package com.edibca.fraxfnGTRD;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -21,6 +21,8 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.edibca.fraxfn.R;
 
 import java.text.DecimalFormat;
 

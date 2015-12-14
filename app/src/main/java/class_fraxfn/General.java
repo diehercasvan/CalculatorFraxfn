@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.view.animation.Animation;
 
-import com.edibca.fraxfn.MyCallback;
+import com.edibca.fraxfnGTRD.MyCallback;
 
 import java.io.File;
 import java.util.ArrayList;

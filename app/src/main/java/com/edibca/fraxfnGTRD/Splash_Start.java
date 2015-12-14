@@ -1,4 +1,4 @@
-package com.edibca.fraxfn;
+package com.edibca.fraxfnGTRD;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,6 +7,8 @@ import android.util.Log;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+
+import com.edibca.fraxfn.R;
 
 
 /**

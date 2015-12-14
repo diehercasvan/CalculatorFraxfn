@@ -1,4 +1,4 @@
-package com.edibca.fraxfn;
+package com.edibca.fraxfnGTRD;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,8 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.RelativeLayout;
 import android.widget.Toast;
+
+import com.edibca.fraxfn.R;
 
 import class_fraxfn.DataBaseManager;
 

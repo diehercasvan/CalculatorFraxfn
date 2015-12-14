@@ -1,4 +1,4 @@
-package com.edibca.fraxfn;
+package com.edibca.fraxfnGTRD;
 
 import android.app.Dialog;
 import android.app.DialogFragment;
@@ -11,7 +11,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-import class_fraxfn.General;
+import com.edibca.fraxfn.R;
 
 /**
  * Created by DIEGO CASALLAS on 30/09/2015.

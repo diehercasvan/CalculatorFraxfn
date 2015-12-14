@@ -1,4 +1,4 @@
-package com.edibca.fraxfn;
+package com.edibca.fraxfnGTRD;
 
 import android.animation.AnimatorInflater;
 import android.animation.ObjectAnimator;
@@ -18,7 +18,7 @@ import android.widget.ExpandableListView;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.google.android.gms.analytics.GoogleAnalytics;
+import com.edibca.fraxfn.R;
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
 

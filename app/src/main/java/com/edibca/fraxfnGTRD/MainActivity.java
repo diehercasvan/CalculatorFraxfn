@@ -1,4 +1,4 @@
-package com.edibca.fraxfn;
+package com.edibca.fraxfnGTRD;
 
 
 
@@ -23,6 +23,8 @@ import android.widget.RelativeLayout;
 import android.widget.SeekBar;
 import android.widget.TableLayout;
 
+
+import com.edibca.fraxfn.R;
 
 import class_fraxfn.Animation_Selection;
 import class_fraxfn.Blackboard;

@@ -1,4 +1,4 @@
-package com.edibca.fraxfn;
+package com.edibca.fraxfnGTRD;
 
 import android.app.Fragment;
 import android.content.Context;
@@ -17,12 +17,12 @@ import class_fraxfn.General;
 /**
  * Created by DIEGO CASALLAS on 11/09/2015.
  */
-public class Tratamiento extends Fragment implements View.OnClickListener {
+public class References extends Fragment implements View.OnClickListener {
     private View view;
     private WebView webView;
     private String sFile= General.FILE_URL;
     private Context context;
-    public Tratamiento(){
+    public References(){
 
         context=General.CONTEXT;
     }
@@ -38,7 +38,7 @@ public class Tratamiento extends Fragment implements View.OnClickListener {
         webView.getSettings().setJavaScriptEnabled(true);
         webView.getSettings().setUseWideViewPort(true);
         webView.getSettings().setLoadWithOverviewMode(true);
-        sFile += "tratamiento.html";
+        sFile += "referencias.html";
 
         webView.clearCache(true);
 

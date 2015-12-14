@@ -1,4 +1,4 @@
-package com.edibca.fraxfn;
+package com.edibca.fraxfnGTRD;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -17,6 +17,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
+import com.edibca.fraxfn.R;
 
 import org.xmlpull.v1.XmlPullParserException;
 
