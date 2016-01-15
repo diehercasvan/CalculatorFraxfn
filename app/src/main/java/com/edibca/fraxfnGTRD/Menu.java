@@ -55,10 +55,13 @@ public class Menu extends Fragment implements View.OnClickListener {
 
     private String sNameSection="";
     private Tracker tracker;
+    private String []sMenu;
     public Menu() {
+
         this.activity = General.ACTIVITY;
         this.context = General.CONTEXT;
         this.sName_Route_Download="";
+        this.sMenu=activity.getResources().getStringArray(R.array.menuList);
 
 
     }
@@ -119,18 +122,9 @@ public class Menu extends Fragment implements View.OnClickListener {
                         case 0:
                             sSelection = "anatomy";
                             position = 0;
-                            sNameSection="El hueso";
+                            sNameSection=sMenu[1];
                             break;
-                        case 1:
-                            sSelection = "anatomyOne";
-                            position = 1;
-                            sNameSection="El corazón";
-                            break;
-                        case 2:
-                            sSelection = "anatomyTwo";
-                            position = 2;
-                            sNameSection="Ciclo cardiaco";
-                            break;
+
                         default:
                             break;
                     }
@@ -140,28 +134,19 @@ public class Menu extends Fragment implements View.OnClickListener {
                         case 0:
                             sSelection = "pathology";
                             position = 3;
-                            sNameSection="Osteoporosis";
+                            sNameSection=sMenu[3];
                             break;
                         case 1:
                             sSelection = "pathologyOne";
                             position = 4;
-                            sNameSection="Factores de riesgo ";
+                            sNameSection=sMenu[4];
                             break;
                         case 2:
                             sSelection = "pathologyTwo";
                             position = 5;
-                            sNameSection="Tratamiento";
+                            sNameSection=sMenu[5];
                             break;
-                        case 3:
-                            sSelection = "pathologyThree";
-                            position = 6;
-                            sNameSection="Agina de pecho";
-                            break;
-                        case 4:
-                            sSelection = "pathologyFour";
-                            position = 7;
-                            sNameSection="Infarto agudo del miocardio ";
-                            break;
+
                         default:
                             break;
                     }
@@ -172,60 +157,26 @@ public class Menu extends Fragment implements View.OnClickListener {
                         case 0:
                             sSelection = "treatment";
                             position = 8;
-                            sNameSection="Calculadora de riesgo FRAX";
+                            sNameSection=sMenu[7];
                             break;
                         case 1:
                             sSelection = "treatmentOne";
                             position = 9;
-                            sNameSection="Calculadora de requerimientos de calcio";
+                            sNameSection=sMenu[8];
                             break;
 
                         default:
                             break;
                     }
                 }
-                if (grup_pos == 3) {
-                    switch (child_pos) {
-                        case 0:
-                            sSelection = "mechanism";
-                            position = 10;
-                            sName_Route_Download="http://creative-med.com/AZ/Descargas_Android/Video/";
-                            execute_files= new Execute_Files();
-                            sName_Folder="mecanismo_accion.mp4";
-                            execute_files.executeFiles(sName_Route_Download+sName_Folder, sName_Folder, true,false);
-                            sNameSection="Mecanismo de acción ";
 
-                            break;
-                        case 1:
-                            sSelection = "ipp";
-                            sNameSection="Ipp";
-                            position = 11;
-                            sName_Route_Download="http://creative-med.com/AZ/Descargas_Android/Pdf/";
-                            execute_files= new Execute_Files();
-                            sName_Folder="ipp.pdf";
-                            execute_files.executeFiles(sName_Route_Download+sName_Folder, sName_Folder, true,true);
-                            return false;
-
-                        default:
-                            break;
-                    }
-                }
-                // mDrawerLayout.closeDrawer(expandableListView);
 
                 displayView(sSelection, position);
                 return false;
             }
         });
-        if (savedInstanceState == null) {
-            // displayView(sSelection,position);
-        } else {
-
-            //displayView(sSelection,position);
-        }
 
 
-
-        // Get tracker.
         tracker = ((Frax) activity.getApplication()).getTracker(Frax.TrackerName.APP_TRACKER);
 
         return view;
@@ -233,7 +184,6 @@ public class Menu extends Fragment implements View.OnClickListener {
     @Override
     public void onStop() {
         super.onStop();
-        //GoogleAnalytics.getInstance(this).reportActivityStop(this);
         tracker.setScreenName(null);
     }
     private void Load_data() {
@@ -241,42 +191,26 @@ public class Menu extends Fragment implements View.OnClickListener {
         lGroups = new ArrayList<>();
         dataGroups = new HashMap<String, List<String>>();
 
-        lGroups.add("Anatomía");
-        lGroups.add("Patología");
-        lGroups.add("Herramientas");
-       // lGroups.add("Ticagrelor");
-        // lGroups.add("Información para pacientes");
+        lGroups.add(sMenu[0]);
+        lGroups.add(sMenu[2]);
+        lGroups.add(sMenu[6]);
+
 
         List<String> hijos_grupo1 = new ArrayList<String>();
-        hijos_grupo1.add("El hueso");
-        //hijos_grupo1.add("El corazón");
-        //hijos_grupo1.add("Ciclo cardiaco");
+        hijos_grupo1.add(sMenu[1]);
 
         List<String> hijos_grupo2 = new ArrayList<String>();
-        hijos_grupo2.add("Osteoporosis");
-        hijos_grupo2.add("Factores de riesgo");
-        hijos_grupo2.add("Tratamiento");
-        //hijos_grupo2.add("Angina de pecho");
-        //hijos_grupo2.add("Infarto agudo del miocardio (IAMCEST, IAMSEST)");
+        hijos_grupo2.add(sMenu[3]);
+        hijos_grupo2.add(sMenu[4]);
+        hijos_grupo2.add(sMenu[5]);
 
         List<String> hijos_grupo3 = new ArrayList<String>();
-        hijos_grupo3.add("Calculadora de riesgo FRAX");
-        hijos_grupo3.add("Cálculo de requerimientos de calcio");
-
-        /*List<String> hijos_grupo4 = new ArrayList<String>();
-        hijos_grupo4.add("Mecanismo de acción");
-        hijos_grupo4.add("IPP");*/
-
-/*
-        List<String> hijos_grupo5 = new ArrayList<String>();
-     */
+        hijos_grupo3.add(sMenu[7]);
+        hijos_grupo3.add(sMenu[8]);
 
         dataGroups.put(lGroups.get(0), hijos_grupo1);
         dataGroups.put(lGroups.get(1), hijos_grupo2);
         dataGroups.put(lGroups.get(2), hijos_grupo3);
-        //dataGroups.put(lGroups.get(3), hijos_grupo4);
-        //dataGroups.put(lGroups.get(4), hijos_grupo5);
-
         adapter = new My_Adapter(activity, lGroups, dataGroups);
         expandableListView.setAdapter(adapter);
     }
@@ -284,9 +218,7 @@ public class Menu extends Fragment implements View.OnClickListener {
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     private void displayView(String sSelection, int position) {
         Fragment fragment = null;
-        //Toast.makeText(activity,"Seleccion :"+sSelection,Toast.LENGTH_LONG).show();
         try {
-            //Toast.makeText(activity,"you Selection"+sSelection,Toast.LENGTH_LONG).show();
             loadAnalytics(sNameSection);
             container_fragment = new Container_fragment();
             container_fragment.sSelection = sSelection;
@@ -300,7 +232,7 @@ public class Menu extends Fragment implements View.OnClickListener {
             }
             else{
 
-                viewMenu(1,true);
+                viewMenu(1, true);
             }
             if(sSelection.equals("pathology")){
 
@@ -314,18 +246,13 @@ public class Menu extends Fragment implements View.OnClickListener {
 
             General.deleteCache(context);
             if(position<11){
-            expandableListView.setItemChecked(position, true);
-            expandableListView.setSelection(position);
+                expandableListView.setItemChecked(position, true);
+                expandableListView.setSelection(position);
             }
 
-            //setTitle(grupos.get(position));
-            //getSupportActionBar().setTitle(mDrawerTitle);
-            //getSupportActionBar().setSubtitle(mTitle);
-            //mDrawerLayout.closeDrawer(expandableListView);
-
-
         } catch (Exception e) {
-            Toast.makeText(activity, "Se ha generado  un  inconveniente    ", Toast.LENGTH_SHORT).show();
+
+            General.messageToast(R.string.error);
         }
     }
 
@@ -343,10 +270,8 @@ public class Menu extends Fragment implements View.OnClickListener {
                 break;
             case R.id.btnReferences:
                 displayView("references",12);
-                sNameSection="Referencias ";
+                sNameSection="Referencias";
                 break;
-
-
 
         }
         loadAnalytics(sNameSection);
@@ -410,3 +335,4 @@ public class Menu extends Fragment implements View.OnClickListener {
     }
 
 }
+

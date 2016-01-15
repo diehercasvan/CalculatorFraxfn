@@ -15,15 +15,9 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
-
-
 import com.edibca.fraxfn.R;
-
 import org.xmlpull.v1.XmlPullParserException;
-
 import java.io.IOException;
-
 import class_fraxfn.Animation_Selection;
 import class_fraxfn.General;
 import class_fraxfn.Xml;
@@ -135,7 +129,7 @@ public class Calculadora extends Fragment implements View.OnClickListener, Adapt
         selectedId[6] = radioGroup7.getCheckedRadioButtonId();
         selectedId[7] = radioGroup8.getCheckedRadioButtonId();
         if (selectedId[0] == -1 || validateText()) {
-            Toast.makeText(activity, "Por favor complete todos los campos", Toast.LENGTH_SHORT).show();
+            General.messageToast(R.string.validateBox);
         } else {
             radioSex[0] = (RadioButton) view.findViewById(selectedId[0]);
             radioSex[1] = (RadioButton) view.findViewById(selectedId[1]);
@@ -147,7 +141,7 @@ public class Calculadora extends Fragment implements View.OnClickListener, Adapt
             radioSex[7] = (RadioButton) view.findViewById(selectedId[7]);
 
             sDataCalculate = radioSex[0].getText() + "," + radioSex[1].getText() + "," + radioSex[2].getText() + "," + radioSex[3].getText() + "," + radioSex[4].getText() + "," + radioSex[5].getText() + "," + radioSex[6].getText() + "," + radioSex[7].getText();
-            //Toast.makeText(this, "Estos son  los  datos  " + sDataCalculate, Toast.LENGTH_SHORT).show();
+
             calculate(sDataCalculate);
 
         }
@@ -171,14 +165,14 @@ public class Calculadora extends Fragment implements View.OnClickListener, Adapt
 
             for (int i = 0; i < sData.length; i++) {
 
-                if (sData[i].equals("Hombre")) {
+                if (sData[i].equals(activity.getResources().getString(R.string.textRequerement11))) {
 
                     sSexo = "h";
-                } else if (sData[i].equals("Mujer")) {
+                } else if (sData[i].equals(activity.getResources().getString(R.string.textRequerement12))) {
 
                     sSexo = "m";
                 } else {
-                    if (!sData[i].equals("No")) {
+                    if (!sData[i].equals(activity.getResources().getString(R.string.no))) {
                         iContSelection++;
 
                     }
@@ -280,19 +274,19 @@ public class Calculadora extends Fragment implements View.OnClickListener, Adapt
                 listResult[1].startAnimation(animation);
                 if (dIMC <= 18) {
 
-                    listResult[1].setText("Bajo peso");
+                    listResult[1].setText(activity.getResources().getString(R.string.menssageCalculater));
                 } else if (dIMC > 18 && dIMC < 25) {
 
-                    listResult[1].setText("Normal");
+                    listResult[1].setText(activity.getResources().getString(R.string.menssageCalculater1));
                 } else if (dIMC >= 25 && dIMC < 30) {
 
-                    listResult[1].setText("Sobrepeso");
+                    listResult[1].setText(activity.getResources().getString(R.string.menssageCalculater2));
                 } else if (dIMC >= 30 && dIMC < 35) {
-                    listResult[1].setText("Obesidad grado I");
+                    listResult[1].setText(activity.getResources().getString(R.string.menssageCalculater3));
                 } else if (dIMC >= 35 && dIMC < 40) {
-                    listResult[1].setText("Obesidad grado II");
+                    listResult[1].setText(activity.getResources().getString(R.string.menssageCalculater4));
                 } else {
-                    listResult[1].setText("Obesidad grado III");
+                    listResult[1].setText(activity.getResources().getString(R.string.menssageCalculater5));
 
                 }
                 long tmp = Math.round(dIMC);
@@ -411,8 +405,8 @@ public class Calculadora extends Fragment implements View.OnClickListener, Adapt
     }
     public void errorAplication (){
         listResult[4].setVisibility(View.GONE);
-        Toast.makeText(getActivity(), "Se ha  presentado  un problema, por favor intente de  nuevo ", Toast.LENGTH_LONG).show();
-        Toast.makeText(getActivity(), "Por favor verifique  los datos  de entrada ", Toast.LENGTH_SHORT).show();
+        General.messageToast(R.string.error);
+        General.messageToast(R.string.validateBox1);
         for(int i=0;i<listResult.length-1;i++){
 
             listResult[i].setText("");

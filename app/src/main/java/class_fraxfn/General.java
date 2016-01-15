@@ -5,9 +5,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.view.animation.Animation;
-
+import android.widget.Toast;
 import com.edibca.fraxfnGTRD.MyCallback;
-
 import java.io.File;
 import java.util.ArrayList;
 
@@ -33,7 +32,9 @@ public class General {
     public  static  String sData;
     public static  MyCallback myCallback;
 
-
+    public General (Activity act){
+        this.ACTIVITY=act;
+    }
 
 
     public General (Activity act,Context context,String route,Resources resources){
@@ -86,4 +87,9 @@ public class General {
 
 
     }
+    public  static void messageToast (int iMessage){
+
+        Toast.makeText(ACTIVITY,iMessage,Toast.LENGTH_LONG).show();
+    }
+
 }

@@ -178,7 +178,7 @@ public class Requirement_calculator extends Fragment implements View.OnClickList
                         //Toast.makeText(getApplication(), "Selecciono" + generateData.searchArray(firstText), Toast.LENGTH_LONG).show();
                         //Toast.makeText(getApplication(), "Selecciono" + firstPortion.replace("Porsion :","").trim(), Toast.LENGTH_LONG).show();
                         dataValue = Integer.parseInt(generateData.searchArray(firstText)) * -1;
-                        portion = Integer.parseInt(firstPortion.replace("Porción :", "").trim());
+                        portion = Integer.parseInt(firstPortion.replace(activity.getResources().getString(R.string.Porcion), "").trim());
                         bValidate = true;
                         calculater();
                         table_GroupFood.removeView(parent);
@@ -200,7 +200,7 @@ public class Requirement_calculator extends Fragment implements View.OnClickList
             }
         } catch (Exception e) {
 
-            Toast.makeText(getActivity(), "Se ha presentado un inconveniente intente de nuevo ", Toast.LENGTH_LONG).show();
+            General.messageToast(R.string.error);
         }
 
 
@@ -225,7 +225,7 @@ public class Requirement_calculator extends Fragment implements View.OnClickList
             }
         } catch (Exception e) {
 
-            Toast.makeText(getActivity(), "Se ha presentado un inconveniente intente de nuevo ", Toast.LENGTH_LONG).show();
+            General.messageToast(R.string.error);
         }
 
 
@@ -285,12 +285,12 @@ public class Requirement_calculator extends Fragment implements View.OnClickList
                 } else {
                     txt_InfoProgressBar.setText("%100");
                     bValidateTable = false;
-                    Toast.makeText(getActivity(), "Nivel de Calcio en  100%", Toast.LENGTH_LONG).show();
+                    General.messageToast(R.string.menssageRequirement);
                 }
             }
         } catch (Exception e) {
 
-            Toast.makeText(getActivity(), "Se ha presentado un inconveniente intente de nuevo ", Toast.LENGTH_LONG).show();
+            General.messageToast(R.string.error);
         }
     }
 
@@ -301,7 +301,7 @@ public class Requirement_calculator extends Fragment implements View.OnClickList
 
 
         if (selectedId[0] == -1) {
-            Toast.makeText(getActivity(), "Por favor complete todos los campos", Toast.LENGTH_SHORT).show();
+            General.messageToast(R.string.validateBox);
         } else {
 
 
@@ -309,7 +309,7 @@ public class Requirement_calculator extends Fragment implements View.OnClickList
                 selectedId[1] = groupPregnancy.getCheckedRadioButtonId();
 
                 if (selectedId[1] == -1) {
-                    Toast.makeText(getActivity(), "Por favor escoja una opción ", Toast.LENGTH_SHORT).show();
+                    General.messageToast(R.string.validateBox2);
                 } else {
 
                     calculate();
@@ -378,9 +378,7 @@ public class Requirement_calculator extends Fragment implements View.OnClickList
             iCalcium = 1200;
 
         } else {
-            //Toast.makeText(this,"Esta es la seleccion"+position,Toast.LENGTH_LONG).show();
 
-            ///createRow(sSelection);
             if (bValidateLoad) {
                 viewDialog(sSelection);
             } else {
@@ -388,9 +386,6 @@ public class Requirement_calculator extends Fragment implements View.OnClickList
             }
 
         }
-
-
-        // Toast.makeText(this, "Selecciono esto" + sSelection, Toast.LENGTH_LONG).show();
 
 
     }
@@ -415,7 +410,7 @@ public class Requirement_calculator extends Fragment implements View.OnClickList
                 txt_Calcium.setText("0 mg");
                 txt_Vitamin.setText("0 UI");
                 txt_CalciumData.setText("0 mg");
-                if (btn.getText().toString().equals("Hombre")) {
+                if (btn.getText().toString().equals(activity.getResources().getString(R.string.textRequerement11))) {
                     bValidateSex = false;
                     txt_info_pregnancy.setVisibility(View.GONE);
                     groupPregnancy.setVisibility(View.GONE);
@@ -438,7 +433,7 @@ public class Requirement_calculator extends Fragment implements View.OnClickList
 
     @Override
     public void onArticleSelected(int position, String sData) {
-        //Toast.makeText(getApplication(), "Selecciono" + position + "Selecciono tipo" + sData, Toast.LENGTH_LONG).show();
+
         createRow(sData, position);
 
     }
@@ -447,7 +442,7 @@ public class Requirement_calculator extends Fragment implements View.OnClickList
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         String name = parent.getItemAtPosition(position).toString();
-        //Toast.makeText(getApplication(), "Selecciono" + name, Toast.LENGTH_LONG).show();
+
     }
 
 

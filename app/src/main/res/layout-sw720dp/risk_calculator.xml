@@ -8,9 +8,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Calculadora de riesgo de fractura⁵"
+        android:text="@string/textRisk"
         android:id="@+id/textView19"
-        android:textSize="25dip"
+        android:textSize="20sp"
         android:textColor="#ff7178ba"
         android:fontFamily="@string/century"
         android:layout_marginLeft="60dp"
@@ -34,19 +34,22 @@
             android:weightSum="1">
 
             <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="400dp"
+                android:layout_width="450dp"
                 android:layout_height="wrap_content"
                 android:stretchColumns="1"
-                android:id="@+id/tableContainer">
+                android:id="@+id/tableContainer"
+                android:layout_margin="30dp">
 
-                <TableRow android:layout_height="200dp">
+                <TableRow android:layout_height="200dp"
+                    android:layout_width="300dp">
                     <TextView
                         android:layout_column="1"
-                        android:text="Sexo"
+                        android:text="@string/textRequerement1"
                         android:padding="3dip"
                         android:id="@+id/text"
                         android:textColor="#7178BA"
-                        android:fontFamily="@string/century" />
+                        android:fontFamily="@string/century"
+                        android:textSize="16dip" />
 
                     <RadioGroup
                         android:layout_width="150dp"
@@ -57,7 +60,7 @@
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Hombre"
+                            android:text="@string/textRequerement11"
                             android:id="@+id/rbtHombre"
                             android:layout_column="3"
                             android:checked="false"
@@ -68,7 +71,7 @@
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Mujer"
+                            android:text="@string/textRequerement12"
                             android:id="@+id/rbtMujer"
                             android:layout_column="4"
                             android:checked="false"
@@ -81,14 +84,15 @@
                 <View
                     android:layout_height="1dip"
                     android:background="#ffd9d9d9" />
-                <TableRow>
+                <TableRow android:layout_width="300dp">
                     <TextView
                         android:layout_column="1"
-                        android:text="Edad"
+                        android:text="@string/textRequerement2"
                         android:padding="3dip"
                         android:id="@+id/lbltxt2"
                         android:textColor="#7178BA"
-                        android:fontFamily="@string/century" />
+                        android:fontFamily="@string/century"
+                        android:textSize="16dip" />
 
                     <Spinner
                         android:layout_width="200dp"
@@ -102,14 +106,15 @@
                     android:layout_height="1dip"
                     android:background="#ffd9d9d9" />
 
-                <TableRow>
+                <TableRow android:layout_width="300dp">
                     <TextView
                         android:layout_column="1"
-                        android:text="Peso en Kg"
+                        android:text="@string/textRisk1"
                         android:padding="3dip"
                         android:id="@+id/lbltext"
                         android:textColor="#7178BA"
-                        android:fontFamily="@string/century" />
+                        android:fontFamily="@string/century"
+                        android:textSize="16dip" />
 
                     <EditText
                         android:layout_width="200dp"
@@ -126,15 +131,16 @@
                     android:layout_height="1dip"
                     android:background="#ffd9d9d9" />
 
-                <TableRow>
+                <TableRow android:layout_width="300dp">
 
                     <TextView
-                        android:text="Estatura en cm"
+                        android:text="@string/textRisk2"
                         android:padding="3dip"
                         android:layout_column="1"
                         android:id="@+id/lblText1"
                         android:textColor="#7178BA"
-                        android:fontFamily="@string/century" />
+                        android:fontFamily="@string/century"
+                        android:textSize="16dip" />
 
                     <EditText
                         android:layout_width="200dp"
@@ -153,34 +159,35 @@
                     android:background="#ffd9d9d9" />
             </TableLayout>
             <TableLayout
-                android:layout_width="400dp"
-                android:layout_height="wrap_content">
+                android:layout_width="450dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp">
 
                 <TableRow
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="3dp">
 
                     <TextView
-                        android:text="¿Fractura previa?"
+                        android:text="@string/textRisk3"
                         android:padding="3dip"
-                        android:layout_column="1"
+                        android:layout_column="0"
                         android:id="@+id/textView"
                         android:layout_width="250dp"
                         android:layout_height="wrap_content"
                         android:textColor="#7178BA"
                         android:fontFamily="@string/century"
-                        android:textSize="16dip" />
+                        android:textSize="16sp" />
                     <RadioGroup android:layout_width="wrap_content"
                         android:orientation="horizontal"
-                        android:id="@+id/radioGroup2">
+                        android:id="@+id/radioGroup2"
+                        android:layout_column="1">
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Sí"
+                            android:text="@string/yes"
                             android:id="@+id/rbtFacturaPrevia"
-                            android:layout_column="3"
                             android:checked="false"
                             android:fontFamily="@string/century"
                             android:buttonTint="#26a69a"
@@ -189,9 +196,8 @@
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="No"
+                            android:text="@string/no"
                             android:id="@+id/rbtFacturaPrevia1"
-                            android:layout_column="4"
                             android:checked="true"
                             android:fontFamily="@string/century"
                             android:buttonTint="#26a69a"
@@ -206,28 +212,28 @@
                     android:layout_marginTop="3dp">
 
                     <TextView
-                        android:text="¿Padres con fractura de cadera?"
+                        android:text="@string/textRisk4"
                         android:padding="3dip"
-                        android:layout_column="1"
+                        android:layout_column="0"
                         android:id="@+id/textView6"
                         android:layout_width="250dp"
                         android:layout_height="wrap_content"
                         android:textColor="#7178BA"
                         android:fontFamily="@string/century"
-                        android:textSize="16dip" />
+                        android:textSize="16sp" />
 
                     <RadioGroup
                         android:layout_width="wrap_content"
                         android:orientation="horizontal"
                         android:layout_height="wrap_content"
-                        android:id="@+id/radioGroup3">
+                        android:id="@+id/radioGroup3"
+                        android:layout_column="1">
 
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Sí"
+                            android:text="@string/yes"
                             android:id="@+id/rbtFacturaCadera"
-                            android:layout_column="3"
                             android:checked="false"
                             android:fontFamily="@string/century"
                             android:buttonTint="#26a69a"
@@ -236,9 +242,8 @@
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="No"
+                            android:text="@string/no"
                             android:id="@+id/rbtFacturaCadera1"
-                            android:layout_column="4"
                             android:checked="true"
                             android:fontFamily="@string/century"
                             android:buttonTint="#26a69a"
@@ -253,9 +258,9 @@
                     android:layout_marginTop="3dp">
 
                     <TextView
-                        android:text="¿Fumador activo?"
+                        android:text="@string/textRisk5"
                         android:padding="3dip"
-                        android:layout_column="1"
+                        android:layout_column="0"
                         android:id="@+id/textView5"
                         android:layout_width="250dp"
                         android:layout_height="wrap_content"
@@ -267,14 +272,14 @@
                         android:layout_width="wrap_content"
                         android:orientation="horizontal"
                         android:layout_height="wrap_content"
-                        android:id="@+id/radioGroup4">
+                        android:id="@+id/radioGroup4"
+                        android:layout_column="1">
 
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Sí"
+                            android:text="@string/yes"
                             android:id="@+id/rbtFumador"
-                            android:layout_column="3"
                             android:checked="false"
                             android:fontFamily="@string/century"
                             android:buttonTint="#26a69a"
@@ -283,9 +288,8 @@
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="No"
+                            android:text="@string/no"
                             android:id="@+id/rbtFumador1"
-                            android:layout_column="4"
                             android:checked="true"
                             android:fontFamily="@string/century"
                             android:buttonTint="#26a69a"
@@ -300,9 +304,9 @@
                     android:layout_marginTop="3dp">
 
                     <TextView
-                        android:text="¿Consume  glucocorticoides?"
+                        android:text="@string/textRisk6"
                         android:padding="3dip"
-                        android:layout_column="1"
+                        android:layout_column="0"
                         android:id="@+id/textView4"
                         android:layout_width="250dp"
                         android:layout_height="wrap_content"
@@ -314,14 +318,14 @@
                         android:layout_width="wrap_content"
                         android:orientation="horizontal"
                         android:layout_height="wrap_content"
-                        android:id="@+id/radioGroup5">
+                        android:id="@+id/radioGroup5"
+                        android:layout_column="1">
 
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Sí"
+                            android:text="@string/yes"
                             android:id="@+id/rbtConsume"
-                            android:layout_column="3"
                             android:checked="false"
                             android:fontFamily="@string/century"
                             android:buttonTint="#26a69a"
@@ -330,9 +334,8 @@
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="No"
+                            android:text="@string/no"
                             android:id="@+id/rbtConsume1"
-                            android:layout_column="4"
                             android:checked="true"
                             android:fontFamily="@string/century"
                             android:buttonTint="#26a69a"
@@ -347,9 +350,9 @@
                     android:layout_marginTop="3dp">
 
                     <TextView
-                        android:text="¿Artritis reumatoide?"
+                        android:text="@string/textRisk7"
                         android:padding="3dip"
-                        android:layout_column="1"
+                        android:layout_column="0"
                         android:id="@+id/textView3"
                         android:layout_width="250dp"
                         android:layout_height="wrap_content"
@@ -361,14 +364,14 @@
                         android:layout_width="wrap_content"
                         android:orientation="horizontal"
                         android:layout_height="wrap_content"
-                        android:id="@+id/radioGroup6">
+                        android:id="@+id/radioGroup6"
+                        android:layout_column="1">
 
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Sí"
+                            android:text="@string/yes"
                             android:id="@+id/rbtArtritis"
-                            android:layout_column="3"
                             android:checked="false"
                             android:fontFamily="@string/century"
                             android:buttonTint="#26a69a"
@@ -377,9 +380,8 @@
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="No"
+                            android:text="@string/no"
                             android:id="@+id/rbtArtritis1"
-                            android:layout_column="4"
                             android:checked="true"
                             android:fontFamily="@string/century"
                             android:buttonTint="#26a69a"
@@ -394,28 +396,28 @@
                     android:layout_marginTop="3dp">
 
                     <TextView
-                        android:text="¿Osteoporosis secundaria?"
+                        android:text="@string/textRisk8"
                         android:padding="3dip"
-                        android:layout_column="1"
+                        android:layout_column="0"
                         android:id="@+id/textView2"
                         android:layout_width="250dp"
                         android:layout_height="wrap_content"
                         android:textColor="#7178BA"
                         android:fontFamily="@string/century"
-                        android:textSize="16dip" />
+                        android:textSize="16sp" />
 
                     <RadioGroup
                         android:layout_width="wrap_content"
                         android:orientation="horizontal"
                         android:layout_height="wrap_content"
-                        android:id="@+id/radioGroup7">
+                        android:id="@+id/radioGroup7"
+                        android:layout_span="1">
 
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Sí"
+                            android:text="@string/yes"
                             android:id="@+id/rbtOsteoporosis"
-                            android:layout_column="3"
                             android:checked="false"
                             android:fontFamily="@string/century"
                             android:buttonTint="#26a69a"
@@ -424,9 +426,8 @@
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="No"
+                            android:text="@string/no"
                             android:id="@+id/rbtOsteoporosis1"
-                            android:layout_column="4"
                             android:checked="true"
                             android:fontFamily="@string/century"
                             android:buttonTint="#26a69a"
@@ -438,9 +439,9 @@
                     android:layout_marginTop="3dp">
 
                     <TextView
-                        android:text="¿Alcohol, 3 o más dosis por día?"
+                        android:text="@string/textRisk9"
                         android:padding="3dip"
-                        android:layout_column="1"
+                        android:layout_column="0"
                         android:id="@+id/lbltext3"
                         android:textColor="#7178BA"
                         android:fontFamily="@string/century"
@@ -452,14 +453,14 @@
                         android:orientation="horizontal"
                         android:layout_height="wrap_content"
                         android:focusableInTouchMode="false"
-                        android:id="@+id/radioGroup8">
+                        android:id="@+id/radioGroup8"
+                        android:layout_column="1">
 
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Sí"
+                            android:text="@string/yes"
                             android:id="@+id/rbtAlcohol"
-                            android:layout_column="3"
                             android:checked="false"
                             android:fontFamily="@string/century"
                             android:buttonTint="#26a69a"
@@ -468,9 +469,8 @@
                         <RadioButton
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="No"
+                            android:text="@string/no"
                             android:id="@+id/rbtAlcohol1"
-                            android:layout_column="4"
                             android:checked="true"
                             android:fontFamily="@string/century"
                             android:buttonTint="#26a69a"
@@ -484,14 +484,14 @@
             <Button
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:text="Calcular"
+                android:text="@string/textRequerement10"
                 android:id="@+id/btnCalculater"
                 android:background="#7178BA"
                 android:textColor="#ffffffff"
                 android:layout_gravity="center_horizontal"
                 android:padding="5dp"
                 android:fontFamily="@string/century"
-                android:layout_margin="30dp" />
+                android:layout_margin="20dp" />
 
 
         </LinearLayout>
@@ -500,8 +500,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/ContainerAnswer"
-            android:padding="20dp"
-            android:layout_margin="20dp">
+            android:padding="20dp">
 
             <TableLayout
                 android:layout_width="wrap_content"
@@ -519,14 +518,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:text="Probabilidad de padecer una fractura en 10 años"
+                        android:text="@string/textRisk10"
                         android:id="@+id/textView8"
                         android:layout_gravity="left|center_horizontal"
                         android:background="#00ffffff"
                         android:padding="5dp"
                         android:gravity="center"
                         android:textColor="#ff7178ba"
-                        android:textSize="22dip"
+                        android:textSize="20dip"
                         android:layout_column="1"
                         android:layout_span="3"
                         android:fontFamily="@string/century" />
@@ -537,20 +536,20 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:layout_width="400dp"
-                        android:layout_height="wrap_content"
+                        android:layout_width="300dp"
+                        android:layout_height="35dp"
                         android:id="@+id/imageView"
                         android:layout_column="1"
                         android:src="@drawable/item_1"
                         android:layout_gravity="center_vertical" />
 
                     <TextView
-                        android:layout_width="300dp"
+                        android:layout_width="250dp"
                         android:layout_height="60dp"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:id="@+id/txtIMC"
                         android:layout_gravity="center_horizontal"
-                        android:textSize="20dip"
+                        android:textSize="16sp"
                         android:textIsSelectable="false"
                         android:layout_column="2"
                         android:gravity="center_vertical"
@@ -566,21 +565,21 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:layout_width="400dp"
-                        android:layout_height="wrap_content"
+                        android:layout_width="300dp"
+                        android:layout_height="35dp"
                         android:id="@+id/imageView2"
                         android:layout_column="1"
                         android:src="@drawable/item_2"
                         android:layout_gravity="center_vertical" />
 
                     <TextView
-                        android:layout_width="300dp"
+                        android:layout_width="250dp"
                         android:layout_height="60dp"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:text="                                   "
                         android:id="@+id/txtClasificacion"
                         android:layout_gravity="center_horizontal"
-                        android:textSize="20dip"
+                        android:textSize="16sp"
                         android:textIsSelectable="false"
                         android:layout_column="2"
                         android:gravity="center_vertical"
@@ -596,19 +595,19 @@
                     android:id="@+id/table">
 
                     <ImageView
-                        android:layout_width="400dp"
-                        android:layout_height="wrap_content"
+                        android:layout_width="300dp"
+                        android:layout_height="35dp"
                         android:id="@+id/imageView3"
                         android:layout_column="1"
                         android:src="@drawable/item_3"
                         android:layout_gravity="center_vertical" />
 
                     <TextView
-                        android:layout_width="300dp"
+                        android:layout_width="250dp"
                         android:layout_height="60dp"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:id="@+id/txtOst"
-                        android:textSize="20dip"
+                        android:textSize="16sp"
                         android:textIsSelectable="false"
                         android:layout_column="2"
                         android:layout_gravity="center_horizontal"
@@ -626,19 +625,19 @@
                     android:id="@+id/row">
 
                     <ImageView
-                        android:layout_width="400dp"
-                        android:layout_height="wrap_content"
+                        android:layout_width="300dp"
+                        android:layout_height="35dp"
                         android:id="@+id/imageView4"
                         android:layout_column="1"
                         android:src="@drawable/item_4"
                         android:layout_gravity="center_vertical" />
 
                     <TextView
-                        android:layout_width="300dp"
+                        android:layout_width="250dp"
                         android:layout_height="60dp"
                         android:textAppearance="?android:attr/textAppearanceLarge"
                         android:id="@+id/txtCad"
-                        android:textSize="20dip"
+                        android:textSize="16sp"
                         android:textIsSelectable="false"
                         android:layout_column="2"
                         android:gravity="center|right"
@@ -665,7 +664,7 @@
                         android:background="#00ffffff"
                         android:padding="5dp"
                         android:textColor="#7178BA"
-                        android:textSize="14dip"
+                        android:textSize="12sp"
                         android:layout_column="1"
                         android:layout_span="3"
                         android:text="@string/valor"
@@ -688,7 +687,7 @@
                 android:layout_alignEnd="@+id/tableLayout"
                 android:layout_alignStart="@+id/tableLayout"
                 android:background="#00ffffff"
-                android:textSize="16dip"
+                android:textSize="9sp"
                 android:fontFamily="@string/century"
                 android:layout_alignParentBottom="true"
                 android:layout_below="@+id/tableLayout"

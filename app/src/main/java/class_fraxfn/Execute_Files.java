@@ -23,9 +23,9 @@ public class Execute_Files {
     private  boolean bType;
 
     public Execute_Files(){
-        context=General.CONTEXT;
+        context= General.CONTEXT;
         sFile_Route= General.FILE_ROUTE;
-        activity=General.ACTIVITY;
+        activity= General.ACTIVITY;
         Obj_Class_control=new Class_control(activity);
     }
 

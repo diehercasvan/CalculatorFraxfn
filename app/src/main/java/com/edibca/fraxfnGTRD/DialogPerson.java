@@ -65,7 +65,7 @@ public class DialogPerson extends DialogFragment implements View.OnClickListener
     public Dialog onCreateDialog(Bundle savedInstanceState) {
 
         dialog = super.onCreateDialog(savedInstanceState);
-        dialog.setTitle("Seleccion de porciones");
+        dialog.setTitle(getActivity().getResources().getString(R.string.titleDialog));
         return dialog;
     }
 
@@ -82,8 +82,8 @@ public class DialogPerson extends DialogFragment implements View.OnClickListener
             if (btn.getId() == checkedId) {
 
                 ans = btn.getText().toString();
-                //Toast.makeText(activity, "Grupo :" + ans, Toast.LENGTH_LONG).show();
-                if (ans.equals("Una  porción ")) {
+                
+                if (ans.equals(getActivity().getResources().getString(R.string.Porcion0))) {
                     data = 1;
                 } else {
                     data = 2;
@@ -95,7 +95,6 @@ public class DialogPerson extends DialogFragment implements View.OnClickListener
 
         }
 
-        //Toast.makeText(getActivity(), "Grupo seleccionado :" + ans, Toast.LENGTH_LONG).show();
         doWork(data);
     }
 }

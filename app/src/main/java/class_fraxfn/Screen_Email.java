@@ -8,8 +8,7 @@ import android.os.Environment;
 import android.util.Log;
 import android.view.View;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
-
+import com.edibca.fraxfn.R;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -36,9 +35,9 @@ public class Screen_Email {
         // View v1 = iv.getRootView(); //even this works
         // View v1 = findViewById(android.R.id.content); //this works too
 
-        sRoute=General.ROUTE;
-        sNameFolder=General.NAME_FOLDER_MAIL;
-        activity=General.ACTIVITY;
+        sRoute= General.ROUTE;
+        sNameFolder= General.NAME_FOLDER_MAIL;
+        activity= General.ACTIVITY;
     }
     public void createScreen(){
 
@@ -89,7 +88,8 @@ public class Screen_Email {
         }
         catch(Exception e)
         {
-            Toast.makeText(activity, "Error al  enviar email", Toast.LENGTH_LONG).show();
+
+            General.messageToast(R.string.errorEmail);
 
         }
 

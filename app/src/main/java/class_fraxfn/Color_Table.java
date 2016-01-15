@@ -17,7 +17,7 @@ public class Color_Table {
     private TableLayout tableLayout;
     private int MAX_ROWS=2;
     private Button BtnId;
-    private Activity activity=General.ACTIVITY;
+    private Activity activity= General.ACTIVITY;
 //Method for create table
     public  void   createTable(TableLayout table){
         tableLayout=table;

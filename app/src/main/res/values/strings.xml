@@ -1,7 +1,7 @@
 <resources>
     <string name="century">fonts/century.ttf</string>
     <string name="app_name">Calculadora FRAX</string>
-
+    <string name="login" >bonviva</string>
     <string name="texto_login">Ingrese  la clave  para acceder  a la aplicación</string>
     <string name="action_settings">Settings</string>
     <string name="code">
@@ -276,6 +276,74 @@ Consultado: 21 09 2015.
     <string name="referencia">
        Organización Mundial de la Salud (OMS). FRAX® Herramienta de Evaluación de Riesgo de Fractura.\nhttp://www.sheffield.ac.uk/FRAX/index.jsp?lang=sp
     </string>
+    //Message Toast
+    <string name="errorEmail" >Error al  enviar email</string>
+    <string name="validateBox" >Por favor complete todos los campos</string>
+    <string name="error" >Se ha  presentado  un problema, por favor intente de  nuevo </string>
+    <string name="erroLogin" >Contraseña  incorrecta</string>
+    <string name="validateBox1" >Por favor verifique  los datos  de entrada</string>
+    <string name="validateBox2" >Por favor escoja una opción</string>
+    <string name="menssageRequirement" >Nivel de Calcio en  100%</string>
 
 
+    //String menu
+    <string-array name="menuList">
+        <item>Anatomía</item>
+        <item>El hueso</item>
+        <item>Patología</item>
+        <item>Osteoporosis</item>
+        <item>Factores de riesgo</item>
+        <item>Tratamiento</item>
+        <item>Herramientas</item>
+        <item>Calculadora de riesgo FRAX</item>
+        <item>Calculadora de requerimientos de calcio</item>
+
+
+    </string-array>
+    //String calculator
+    <string name="Porcion" >Porción :</string>
+    <string name="Porcion0" >Una  porción</string>
+    <string name="Porcion1" >Dos  porción </string>
+    <string name="Porcion2" >Seleccion de porciones</string>
+    <string name="menssageCalculater" >Bajo peso</string>
+    <string name="menssageCalculater1" >Normal</string>
+    <string name="menssageCalculater2" >Sobrepeso</string>
+    <string name="menssageCalculater3" >Obesidad grado I</string>
+    <string name="menssageCalculater4" >Obesidad grado II</string>
+    <string name="menssageCalculater5" >Obesidad grado III</string>
+    //String requerement
+    <string name="textRequerement" >Cálculo de requerimientos de calcio *⁶</string>
+    <string name="textRequerement1" >Sexo</string>
+    <string name="textRequerement2" >Edad</string>
+    <string name="textRequerement3" >*Requerimiento diario de calcio:</string>
+    <string name="textRequerement4" >Requerimiento diario de vitamina D:</string>
+    <string name="textRequerement5" >Su ingesta actual es de:</string>
+    <string name="textRequerement6" >Su ingesta de calcio diaria recomendada es de:</string>
+    <string name="textRequerement7" >*Contenido de calcio en mg por porción de 100 g o 100 mL</string>
+    <string name="textRequerement8" >Grupos de alimentos</string>
+    <string name="textRequerement9" >Seleccione las siguientes opciones para realizar su cálculo :</string>
+    <string name="textRequerement10" >Calcular</string>
+    <string name="textRequerement11" >Hombre</string>
+    <string name="textRequerement12" >Mujer</string>
+    <string name="textRequerement13" >Se encuentra en embarazo o en periodo de lactancia</string>
+
+
+
+    //String Risk calculator
+    <string name="textRisk" >Calculadora de riesgo de fractura⁵</string>
+    <string name="textRisk1" >Peso en Kg</string>
+    <string name="textRisk2" >Estatura en cm</string>
+    <string name="textRisk3" >¿Fractura previa?</string>
+    <string name="textRisk4" >¿Padres con fractura de cadera?</string>
+    <string name="textRisk5" >¿Fumador activo?</string>
+    <string name="textRisk6" >¿Consume glucocorticoides?</string>
+    <string name="textRisk7" >¿Artritis reumatoide?</string>
+    <string name="textRisk8" >¿Osteoporosis secundaria?</string>
+    <string name="textRisk9" >¿Alcohol, 3 o mas dosis por día?</string>
+    <string name="yes" >Sí</string>
+    <string name="no" >No</string>
+    <string name="textRisk10" >Probabilidad de padecer una fractura en 10 años</string>
+
+    //Dialog
+    <string name="titleDialog">"Seleccion de porciones"</string>
 </resources>

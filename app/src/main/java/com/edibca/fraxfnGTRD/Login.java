@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.edibca.fraxfn.R;
 
 import class_fraxfn.DataBaseManager;
+import class_fraxfn.General;
 
 /**
  * Created by DIEGO CASALLAS on 01/10/2015.
@@ -21,8 +22,8 @@ public class Login extends Activity implements View.OnClickListener {
     private EditText editPassword;
     private Button btnLogin;
     private String sTexPassword;
-    private  boolean bValidaPassword;
     private Cursor cursor;
+    private String sLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,8 @@ public class Login extends Activity implements View.OnClickListener {
         btnLogin = (Button) findViewById(R.id.btn_Login);
         btnLogin.setOnClickListener(this);
         manager = new DataBaseManager(this);
+        this.sLogin=getResources().getString(R.string.login);
+
         //manager.eliminar("password");
 
         if(validaLogin()){
@@ -54,7 +57,7 @@ public class Login extends Activity implements View.OnClickListener {
         finish();
     }
     public boolean validaLogin(){
-        cursor=manager.buscarContacto("bonviva");
+        cursor=manager.buscarContacto(sLogin);
 
         if(cursor.getCount()!=0 ){
 
@@ -83,11 +86,12 @@ public class Login extends Activity implements View.OnClickListener {
     public boolean searchData() {
 
         boolean bValidate = false;
-        if (sTexPassword.equals("bonviva")) {
+        if (sTexPassword.equals(sLogin)) {
             bValidate = true;
         } else {
             editPassword.setText("");
-            Toast.makeText(getApplicationContext(), "Contraseña  incorrecta", Toast.LENGTH_SHORT).show();
+
+            Toast.makeText(getApplication(),R.string.erroLogin,Toast.LENGTH_LONG).show();
 
         }
 
