@@ -150,7 +150,7 @@ public class Requirement_calculator extends Fragment implements View.OnClickList
 
 
                 final TextView txtPortion = new TextView(getActivity());
-                txtPortion.setText("Porción :" + position);
+                txtPortion.setText(activity.getResources().getString(R.string.Porcion) + position);
                 txtPortion.setWidth(150);
                 txtPortion.setPadding(8, 8, 8, 8);
                 txtPortion.setBackgroundColor(getResources().getColor(R.color.page));
@@ -175,8 +175,7 @@ public class Requirement_calculator extends Fragment implements View.OnClickList
                         final String firstPortion = firstTextPortion.getText().toString();
                         final TableRow parent = (TableRow) v.getParent();
 
-                        //Toast.makeText(getApplication(), "Selecciono" + generateData.searchArray(firstText), Toast.LENGTH_LONG).show();
-                        //Toast.makeText(getApplication(), "Selecciono" + firstPortion.replace("Porsion :","").trim(), Toast.LENGTH_LONG).show();
+
                         dataValue = Integer.parseInt(generateData.searchArray(firstText)) * -1;
                         portion = Integer.parseInt(firstPortion.replace(activity.getResources().getString(R.string.Porcion), "").trim());
                         bValidate = true;
@@ -237,12 +236,9 @@ public class Requirement_calculator extends Fragment implements View.OnClickList
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
         }
@@ -340,39 +336,40 @@ public class Requirement_calculator extends Fragment implements View.OnClickList
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        String[]sAge=activity.getResources().getStringArray(R.array.age);
         String sSelection = parent.getItemAtPosition(position).toString();
 
-        if (sSelection.equals("1 a 3 años")) {
+        if (sSelection.equals(sAge[0])) {
 
             sCalcium = "700 mg";
             sVitamin = "600";
             iCalcium = 700;
-        } else if (sSelection.equals("4 a 8 años")) {
+        } else if (sSelection.equals(sAge[1])) {
             sCalcium = "1.000 mg";
             sVitamin = "600 UI";
             iCalcium = 1000;
 
-        } else if (sSelection.equals("9 a 13 años")) {
+        } else if (sSelection.equals(sAge[2])) {
             sCalcium = "1.300 mg";
             sVitamin = "600 UI";
             iCalcium = 1300;
 
-        } else if (sSelection.equals("14 a 18 años")) {
+        } else if (sSelection.equals(sAge[3])) {
             sCalcium = "1.300 mg";
             sVitamin = "600 UI";
             iCalcium = 1300;
 
-        } else if (sSelection.equals("19 a 50 años")) {
+        } else if (sSelection.equals(sAge[4])) {
             sCalcium = "1.000 mg";
             sVitamin = "600 UI";
             iCalcium = 1000;
 
-        } else if (sSelection.equals("51 a 70 años")) {
+        } else if (sSelection.equals(sAge[5])) {
             sCalcium = "1.200 mg";
             sVitamin = "600 UI";
             iCalcium = 1200;
 
-        } else if (sSelection.equals("Más de 71 años")) {
+        } else if (sSelection.equals(sAge[6])) {
             sCalcium = "1.200 mg";
             sVitamin = "800 UI";
             iCalcium = 1200;

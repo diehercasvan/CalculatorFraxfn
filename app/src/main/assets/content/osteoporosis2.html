@@ -149,7 +149,7 @@ function cambiar_escena(escena){
 			$('.secuencia:not("#secuencia_1")').fadeOut(200);
 		});
 		
-		$('#subtitulo').text('Hueso normal');
+		$('#subtitulo').text('Normal bone');
 		break;
 		case 2:
 		$('.escena').css('background-position','center top');
@@ -157,7 +157,7 @@ function cambiar_escena(escena){
 		$('#secuencia_2').fadeIn(400,function(){
 			$('.secuencia:not("#secuencia_2")').fadeOut(200);
 		});
-		$('#subtitulo').text('Se inicia osteopenia');
+		$('#subtitulo').text('Osteopenia appears');
 		break;
 		case 3:
 		$('.escena').css('background-position','center top');
@@ -165,7 +165,7 @@ function cambiar_escena(escena){
 		$('#secuencia_3').fadeIn(400,function(){
 			$('.secuencia:not("#secuencia_3")').fadeOut(200);
 		});
-		$('#subtitulo').text('Hueso con osteoporosis');
+		$('#subtitulo').text('Osteoporotic bone');
 		break;
 		case 4:
 		$('.escena').css('background-position','center top');
@@ -173,7 +173,7 @@ function cambiar_escena(escena){
 		$('#secuencia_4').fadeIn(400,function(){
 			$('.secuencia:not("#secuencia_4")').fadeOut(200);
 		});
-		$('#subtitulo').text('Hueso con osteoporosis');
+		$('#subtitulo').text('Osteoporotic bone');
 		break;
 	}
 }
@@ -215,8 +215,9 @@ window.onresize = function() {
 </head>
 <body>
 <div>
-  <div id="encabezado"> <span id="titulo">Osteoporosis</span><br />
-    <span id="subtitulo">Hueso normal</span><sup>2</sup> </div>
+  <div id="encabezado"> <span id="titulo">Osteoporosis
+</span><br />
+    <span id="subtitulo">Normal bone</span><sup>2</sup> </div>
   <div id="cuerpo"> 
     <div class="secuencia" id="secuencia_1"></div>
     <div class="secuencia" id="secuencia_2"></div>
@@ -232,7 +233,7 @@ window.onresize = function() {
       <div class="escena" id="escena_4" data-id="4"></div>
     </div>
 
-    <div style="text-align:right; width: 40%;"><a href="osteoporosis.html" class="btn_general">&lt; Anterior</a> </div>
+    <div style="text-align:right; width: 40%;"><a href="osteoporosis.html" class="btn_general">&lt; Previous</a> </div>
   </div>
 </div>
 

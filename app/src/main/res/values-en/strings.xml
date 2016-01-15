@@ -1,0 +1,349 @@
+<resources>
+    <string name="century">fonts/century.ttf</string>
+    <string name="app_name">Calculadora FRAX</string>
+    <string name="login" >bonviva</string>
+    <string name="texto_login">Enter the password to access the application</string>
+    <string name="action_settings">Settings</string>
+    <string name="code">
+        Reference:
+Retrieved: 20 05 2015.
+        International Osteoporosis Foundation. Calcium. [online] Available on:\n\n http://www.iofbonehealth.org/osteoporosis-musculoskeletal-disorders/osteoporosis/prevention/calcium
+Retrieved: 21 09 2015.
+
+    </string>
+    <string-array name="age">
+        <item>1 - 3 years old</item>
+        <item>4 - 8 years old</item>
+        <item>9 - 13 years old</item>
+        <item>14 - 18 years old</item>
+        <item>19 - 50 years old</item>
+        <item>51 - 70 years old</item>
+        <item>Older than 71 years old</item>
+    </string-array>
+
+    <string-array name="foodGroup">
+        <item> Cream, thick </item>
+        <item> Cream, thin </item>
+        <item> Cream powder, non-dairy substitute </item>
+        <item> Donkey milk, liquid </item>
+        <item> Goat milk, liquid </item>
+        <item> Cow milk, with chocolate, liquid, low-fat </item>
+        <item> Cow milk, with cocoa, liquid </item>
+        <item> Cow milk, condensed, sweetened, canned </item>
+        <item> Cow milk, skim, powdered, + vitamin A </item>
+        <item> Cow milk, skim, powdered, instant, + vitamin A </item>
+        <item> Cow milk, skim, liquid, (1% fat) + vitamin A </item>
+        <item> Cow milk, skim, powdered </item>
+        <item> Cow milk, skim, powdered (PL 480) </item>
+        <item> Cow milk, whole, powdered </item>
+        <item> Cow milk, whole, evaporated, canned, + vitamin A </item>
+        <item> Cow milk, whole, liquid (3,25% fat) </item>
+        <item> Cow milk, whole, reduced-fat (2% fat), liquid </item>
+        <item> Cow milk, whole, reduced-fat (2% fat), fortified, liquid </item>
+        <item> American cheese, processed, spread </item>
+        <item> American cheese, processed, sliced </item>
+        <item> American cheese, processed, sliced, low-fat </item>
+        <item> American cheese, processed, sliced, with pepper </item>
+        <item> Queso blanco (white cheese - Panama) </item>
+        <item> Fresh white cheese, goat milk </item>
+        <item> Fresh white cheese, skim milk </item>
+        <item> Fresh white cheese, whole milk </item>
+        <item> Fresh white cheese, low-fat milk </item>
+        <item> Cottage cheese, with cream </item>
+        <item> "Cream cheese or 'queso de capas'" </item>
+        <item> Hard cheese, whole milk </item>
+        <item> Gouda cheese </item>
+        <item> Mozzarella, skim milk </item>
+        <item> Mozzarella, whole milk </item>
+        <item> Airy cheese (queso oreado), skim milk </item>
+        <item> Airy cheese (queso oreado), whole milk </item>
+        <item> Airy cheese (queso oreado), low-fat milk </item>
+        <item> Parmesan cheese, hard </item>
+        <item> Parmesan cheese, grated </item>
+        <item> Camembert cheese </item>
+        <item> Cheddar cheese </item>
+        <item> Curds, fresh </item>
+        <item> Feta cheese </item>
+        <item> Cheese Foundue </item>
+        <item> Monterey Jack cheese </item>
+        <item> Muenster cheese </item>
+        <item> Quesillo (small fresh cheese) </item>
+        <item> Ricotta (requesón) cheese </item>
+        <item> Ricotta cheese, skim </item>
+        <item> Ricotta cheese, whole milk </item>
+        <item> Swiss cheese </item>
+        <item> Swiss cheese, low-fat </item>
+        <item> Acid whey </item>
+        <item> Sweet whey </item>
+        <item> Yogurt, skim milk, natural </item>
+        <item> Yogurt, skim milk, chocolate flavored </item>
+        <item> Yogurt, skim milk, fruit flavored </item>
+        <item> Yogurt, whole milk, natural </item>
+        <item> Chicken egg, whole, raw </item>
+        <item> Chicken egg, whole, powdered </item>
+        <item> Chicken egg yolk, powdered </item>
+        <item> Iguana egg, raw </item>
+        <item> Dried shrimp, salted </item>
+        <item> "'Camaroncillo', dried, salted" </item>
+        <item> Cooked crab </item>
+        <item> Granular caviar, black or red </item>
+        <item> "'Jutes' (freshwater snail - El Salvador)" </item>
+        <item> Fresh cod </item>
+        <item> Bonito (fish), dried, salted </item>
+        <item> "Sea silverside ('pejerrey'), fresh" </item>
+        <item> "Frogfish ('pejesapo'), cooked "</item>
+        <item> Canned pink salmon </item>
+        <item> Canned sardines in oil </item>
+        <item> Canned sardines in tomato sauce </item>
+        <item> Dried salted fish </item>
+        <item> Small dried fish, salted </item>
+        <item> Navy beans, dry grain </item>
+        <item> Cowpea or black-eyed peas, dry grain </item>
+        <item> "'Quimbolito' beans, dry grain" </item>
+        <item> Soybeans, dry grain </item>
+        <item> Chickpea, dry grain </item>
+        <item> Soy flour </item>
+        <item> Soy milk </item>
+        <item> Dried almond </item>
+        <item> Dried, roasted, salted almonds </item>
+        <item> Dried hazelnut </item>
+        <item> Brazil nut </item>
+        <item> Sesame seeds </item>
+        <item> Chan seeds (pignut) </item>
+        <item> Epazote (wormseed, Mexican tea) </item>
+        <item> Watercress, raw </item>
+        <item> Pigweed / amaranthus </item>
+        <item> Busnay flowers </item>
+        <item> Sweet potato </item>
+        <item> Chaya (tree spinach) </item>
+        <item> Coban chili (Guatemala), dried </item>
+        <item> Chipilin leaves </item>
+        <item> Napa or nappa cabbage </item>
+        <item> Endive </item>
+        <item> Cooked, salted spinach, drained </item>
+        <item> Green beans </item>
+        <item> Izote, itabo </item>
+        <item> Cassava flour </item>
+        <item> Fig, dried fruit </item>
+        <item> Tamarind </item>
+        <item> Amaranth, dry grain </item>
+        <item> Instant oatmeal with bananas </item>
+        <item> Instant oatmeal with cinnamon and spices </item>
+        <item> Instant oatmeal with fruit and cream </item>
+        <item> Instant oatmeal with honey </item>
+        <item> Fortified instant oatmeal </item>
+        <item> All Bran, breakfast cereal </item>
+        <item> Nesquik, breakfast cereal </item>
+        <item> Natural milkshake, powdered </item>
+        <item> Ice cream, vanilla, sugarfree </item>
+        <item> Ice cream, strawberry </item>
+        <item> Ice cream, chocolate </item>
+    </string-array>
+
+    <string-array name="numberGroup">
+        <item>65</item>
+        <item>96</item>
+        <item>22</item>
+        <item>126</item>
+        <item>134</item>
+        <item>109</item>
+        <item>105</item>
+        <item>284</item>
+        <item>1257</item>
+        <item>1231</item>
+        <item>119</item>
+        <item>1257</item>
+        <item>1257</item>
+        <item>912</item>
+        <item>261</item>
+        <item>113</item>
+        <item>117</item>
+        <item>143</item>
+        <item>562</item>
+        <item>552</item>
+        <item>684</item>
+        <item>614</item>
+        <item>643</item>
+        <item>140</item>
+        <item>687</item>
+        <item>783</item>
+        <item>415</item>
+        <item>32</item>
+        <item>80</item>
+        <item>2274</item>
+        <item>700</item>
+        <item>782</item>
+        <item>505</item>
+        <item>1004</item>
+        <item>751</item>
+        <item>752</item>
+        <item>1184</item>
+        <item>1109</item>
+        <item>388</item>
+        <item>721</item>
+        <item>718</item>
+        <item>493</item>
+        <item>476</item>
+        <item>746</item>
+        <item>717</item>
+        <item>162</item>
+        <item>92</item>
+        <item>272</item>
+        <item>207</item>
+        <item>772</item>
+        <item>961</item>
+        <item>103</item>
+        <item>47</item>
+        <item>199</item>
+        <item>88</item>
+        <item>138</item>
+        <item>121</item>
+        <item>53</item>
+        <item>231</item>
+        <item>284</item>
+        <item>421</item>
+        <item>684</item>
+        <item>872</item>
+        <item>423</item>
+        <item>275</item>
+        <item>1791</item>
+        <item>160</item>
+        <item>112</item>
+        <item>105</item>
+        <item>109</item>
+        <item>213</item>
+        <item>382</item>
+        <item>240</item>
+        <item>122</item>
+        <item>3471</item>
+        <item>240</item>
+        <item>110</item>
+        <item>218</item>
+        <item>277</item>
+        <item>105</item>
+        <item>188</item>
+        <item>597</item>
+        <item>216</item>
+        <item>266</item>
+        <item>149</item>
+        <item>160</item>
+        <item>975</item>
+        <item>631</item>
+        <item>304</item>
+        <item>117</item>
+        <item>278</item>
+        <item>403</item>
+        <item>111</item>
+        <item>234</item>
+        <item>142</item>
+        <item>287</item>
+        <item>136</item>
+        <item>100</item>
+        <item>136</item>
+        <item>213</item>
+        <item>342</item>
+        <item>148</item>
+        <item>162</item>
+        <item>74</item>
+        <item>153</item>
+        <item>268</item>
+        <item>239</item>
+        <item>314</item>
+        <item>244</item>
+        <item>357</item>
+        <item>389</item>
+        <item>333</item>
+        <item>298</item>
+        <item>133</item>
+        <item>120</item>
+        <item>109</item>
+    </string-array>
+
+    <string-array name="edad">
+        <item>50 - 54 years old</item>
+        <item>55 - 59 years old</item>
+        <item>60 - 64 years old</item>
+        <item>65 - 69 years old</item>
+        <item>70 - 74 years old</item>
+        <item>75 - 79 years old</item>
+        <item>80 - 84 years old</item>
+        <item>85 - 90 years old</item>
+        <item>Older than 90 years old</item>
+    </string-array>
+    <string name="valor">
+* The value outside the parentheses indicates the percentage of fracture risk in the following 10 years.\n\nNote: the range inside the parentheses is not an estimate of confidence, but is a consequence of the different weight of the risk factors.
+    </string>
+    <string name="referencia">
+       World Health Organization (WHO). FRAX®. Fracture Risk Assessment Tool. http://www.sheffield.ac.uk/FRAX/index.jsp?lang=sp
+    </string>
+    //Message Toast
+    <string name="errorEmail" >Failed to send email</string>
+    <string name="validateBox" >Please complete all fields</string>
+    <string name="error" >There has been a problem, please try again</string>
+    <string name="erroLogin" >Incorrect password</string>
+    <string name="validateBox1" >Please check the input data</string>
+    <string name="validateBox2" >Please choose an option</string>
+    <string name="menssageRequirement" >Calcium level of 100%</string>
+
+
+    //String menu
+    <string-array name="menuList">
+        <item>Anatomy</item>
+        <item>Bone</item>
+        <item>Pathology</item>
+        <item>Osteoporosis</item>
+        <item>Risk factors</item>
+        <item>Treatment</item>
+        <item>Tools</item>
+        <item>Risk calculator FRAX</item>
+        <item>Calcium requirements calculator</item>
+
+
+    </string-array>
+    //String calculator
+    <string name="Porcion" >Portion :</string>
+    <string name="Porcion0" >1 serving a day</string>
+    <string name="Porcion1" >2 servings a day </string>
+    <string name="Porcion2" >Selection portions</string>
+    <string name="menssageCalculater" >Low weight</string>
+    <string name="menssageCalculater1" >Normal</string>
+    <string name="menssageCalculater2" >Overweight</string>
+    <string name="menssageCalculater3" >Obesity Grade I</string>
+    <string name="menssageCalculater4" >Obesity Grade II</string>
+    <string name="menssageCalculater5" >Obesity Grade III</string>
+    //String requerement
+    <string name="textRequerement" >Calculating calcium requirements *⁶</string>
+    <string name="textRequerement1" >Sex</string>
+    <string name="textRequerement2" >Age</string>
+    <string name="textRequerement3" >*Daily calcium requirements:</string>
+    <string name="textRequerement4" >Daily vitamin D requirements:</string>
+    <string name="textRequerement5" >Your current intake is:</string>
+    <string name="textRequerement6" >Your daily calcium intake is:</string>
+    <string name="textRequerement7" >*Calcium content in mg per serving of 100 g or 100 mL</string>
+    <string name="textRequerement8" >Food groups</string>
+    <string name="textRequerement9" >Select the following options for the calculation:</string>
+    <string name="textRequerement10" >Calculate</string>
+    <string name="textRequerement11" >Male</string>
+    <string name="textRequerement12" >Female</string>
+    <string name="textRequerement13" >Are you pregnant or lactating?</string>
+
+
+
+    //String Risk calculator
+    <string name="textRisk" >Fracture risk calculator⁵</string>
+    <string name="textRisk1" >Weight (kg)</string>
+    <string name="textRisk2" >Height (cm)</string>
+    <string name="textRisk3" >Prior fracture?</string>
+    <string name="textRisk4" >Parents with hip fracture?</string>
+    <string name="textRisk5" >Active smoker?</string>
+    <string name="textRisk6" >Receiving corticoids?</string>
+    <string name="textRisk7" >Rheumatoid arthritis?</string>
+    <string name="textRisk8" >Secondary osteoporosis?</string>
+    <string name="textRisk9" >Alcohol: 3 or more drinks a day?</string>
+    <string name="yes" >Yes</string>
+    <string name="no" >No</string>
+    <string name="textRisk10" >10-year fracture risk</string>
+
+    //Dialog
+    <string name="titleDialog">"Selection portions"</string>
+</resources>

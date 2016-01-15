@@ -135,19 +135,19 @@ window.onresize = function() {
 </head>
 <body>
 <!--<div>-->
-<div id="encabezado"> <span id="titulo">Factores de riesgo<sup>2,3</sup></span><br>
+<div id="encabezado"> <span id="titulo">Risk factors<sup>2,3</sup></span><br>
     <span id="subtitulo"></span>
   </div>
 
 <div class="row valign-wrapper" >
   <div class="col s12 m12 l12 center-align valign">
-    <button class="btn-large waves-effect indigo lighten-1 modal-trigger" data-target="modal1">Factores de riesgo para osteoporosis y fracturas por osteoporosis</button>
+    <button class="btn-large waves-effect indigo lighten-1 modal-trigger" data-target="modal1">Risk factors for osteoporosis and osteoporosis fractures</button>
     <br />
     <br />
-    <button class="btn-large waves-effect indigo lighten-2 modal-trigger" data-target="modal2">Factores de riesgo para caídas en pacientes adultos mayores</button>
+    <button class="btn-large waves-effect indigo lighten-2 modal-trigger" data-target="modal2">Risk factors for falls in elderly patients</button>
     <br />
     <br />
-    <button class="btn-large waves-effect indigo lighten-3 modal-trigger" data-target="modal3">Factores de riesgo para osteoporosis secundaria</button>
+    <button class="btn-large waves-effect indigo lighten-3 modal-trigger" data-target="modal3">Risk factors for secondary osteoporosis</button>
   </div>
 </div>
 <div class="row">
@@ -164,113 +164,117 @@ window.onresize = function() {
 <!-- Modal Structure -->
 <div id="modal1" class="modal modal-fixed-footer">
   <div class="modal-content">
-    <h5>Factores de riesgo para osteoporosis y fracturas por osteoporosis<sup>2,3</sup></h5>
+    <h5>Risk factors for osteoporosis and osteoporosis fractures<sup>2,3</sup></h5>
     <form>
       <br />
       <input name="fac" id="fac1" class="filled-in" type="checkbox" value="" />
-      <label for="fac1">Edad </label>
+      <label for="fac1">Age</label>
       <br />
       <input name="fac" id="fac2" class="filled-in" type="checkbox" value="" />
-      <label for="fac2">Sexo</label>
+      <label for="fac2">Sex</label>
       <br />
       <input name="fac" id="fac3" class="filled-in" type="checkbox" value="" />
-      <label for="fac3">Raza</label>
+      <label for="fac3">Race</label>
       <br />
       <input name="fac" id="fac4" class="filled-in" type="checkbox" value="" />
-      <label for="fac4">Historia familiar de osteoporosis</label>
+      <label for="fac4">Family history of osteoporosis</label>
       <br />
       <input name="fac" id="fac5" class="filled-in" type="checkbox" value="" />
-      <label for="fac5">Historia materna de fractura de cadera</label>
+      <label for="fac5">Maternal history of hip fracture</label>
       <br />
       <input name="fac" id="fac6" class="filled-in" type="checkbox" value="" />
-      <label for="fac6">Menopausia precoz</label>
+      <label for="fac6">Early menopause</label>
       <br />
       <input name="fac" id="fac7" class="filled-in" type="checkbox" value="" />
-      <label for="fac7">Estilos de vida: tabaco, consumo de alcohol, sedentarismo</label>
+      <label for="fac7">Lifestyle: smoking, alcohol consumption, physical inactivity</label>
       <br />
       <input name="fac" id="fac8" class="filled-in" type="checkbox" value="" />
-      <label for="fac8">Síndromes de malabsorción por deficiencia de calcio y vitamina D </label>
+      <label for="fac8">Malabsorption syndromes by calcium and vitamin D deficiency</label>
       <br />
       <input name="fac" id="fac9" class="filled-in" type="checkbox" value="" />
-      <label for="fac9">Historia de fractura con trauma de baja intensidad</label>
+      <label for="fac9">History of fracture with low-intensity trauma</label>
       <br />
       <input name="fac" id="fac10" class="filled-in" type="checkbox" value="" />
-      <label for="fac10">Signos de fractura vertebral (cifosis senil, disminución de la altura)</label>
+      <label for="fac10">Signs of vertebral fracture (senile kyphosis, decreased height)</label>
       <br />
       <input name="fac" id="fac11" class="filled-in" type="checkbox" value="" />
-      <label for="fac11">Condiciones médicas asociadas que incrementen el riesgo de osteoporosis</label>
+      <label for="fac11">Associated medical conditions that increase the risk of osteoporosis
+</label>
       <br />
       <input name="fac" id="fac12" class="filled-in" type="checkbox" value="" />
-      <label for="fac12">Medicamentos (corticoides, anticonvulsivantes y anticoagulantes)</label>
+      <label for="fac12">Medications (corticosteroids, anticonvulsants and anticoagulants)</label>
       <br />
     </form>
   </div>
-  <div class="modal-footer"> <a href="#" class="modal-action modal-close waves-effect btn-flat ">Cerrar</a> <a href="#" onclick="$('#modal1').closeModal();$('#modal2').openModal();" class="modal-action waves-effect btn-flat">Siguiente &gt;</a> </div>
+  <div class="modal-footer"> <a href="#" class="modal-action modal-close waves-effect btn-flat ">Close</a> <a href="#" onclick="$('#modal1').closeModal();$('#modal2').openModal();" class="modal-action waves-effect btn-flat">Next &gt;</a> </div>
 </div>
 <div id="modal2" class="modal modal-fixed-footer">
   <div class="modal-content">
-    <h5>Factores de riesgo para caídas en pacientes adultos mayores<sup>2,3</sup></h5>
+    <h5>Risk factors for falls in elderly patients<sup>2,3</sup></h5>
     <form>
       <br />
       <input name="fac" id="fac13" class="filled-in" type="checkbox" value="" />
-      <label for="fac13">Alteraciones del equilibrio </label>
+      <label for="fac13">Impaired balance</label>
       <br />
       <input name="fac" id="fac14" class="filled-in" type="checkbox" value="" />
-      <label for="fac14">Hipotensión ortostática</label>
+      <label for="fac14">Orthostatic hypotension</label>
       <br />
       <input name="fac" id="fac15" class="filled-in" type="checkbox" value="" />
-      <label for="fac15">Atrofia muscular de miembros inferiores</label>
+      <label for="fac15">Lower limb muscle atrophy</label>
       <br />
       <input name="fac" id="fac16" class="filled-in" type="checkbox" value="" />
-      <label for="fac16">Desacondicionamiento físico</label>
+      <label for="fac16">Physical deconditioning</label>
       <br />
       <input name="fac" id="fac17" class="filled-in" type="checkbox" value="" />
-      <label for="fac17">Uso de medicamentos con efecto sedante</label>
+      <label for="fac17">Use of sedative medications</label>
       <br />
       <input name="fac" id="fac18" class="filled-in" type="checkbox" value="" />
-      <label for="fac18">Disminución de la agudeza visual</label>
+      <label for="fac18">Decreased visual acuity</label>
       <br />
       <input name="fac" id="fac19" class="filled-in" type="checkbox" value="" />
-      <label for="fac19">Disminución de la agudeza auditiva</label>
+      <label for="fac19">Decreased auditory acuity</label>
       <br />
       <input name="fac" id="fac20" class="filled-in" type="checkbox" value="" />
-      <label for="fac20">Alteración cognitiva</label>
+      <label for="fac20">Cognitive impairment</label>
     </form>
   </div>
-  <div class="modal-footer"> <a href="#" class="modal-action modal-close waves-effect btn-flat ">Cerrar</a> <a href="#" onclick="$('#modal2').closeModal();$('#modal3').openModal();" class="modal-action waves-effect btn-flat">Siguiente &gt;</a> <a href="#" onclick="$('#modal2').closeModal();$('#modal1').openModal();" class="modal-action waves-effect btn-flat">&lt; Anterior</a></div>
+  <div class="modal-footer"> <a href="#" class="modal-action modal-close waves-effect btn-flat ">Close</a> <a href="#" onclick="$('#modal2').closeModal();$('#modal3').openModal();" class="modal-action waves-effect btn-flat">Next &gt;</a> <a href="#" onclick="$('#modal2').closeModal();$('#modal1').openModal();" class="modal-action waves-effect btn-flat">&lt; Previous</a></div>
 </div>
 <div id="modal3" class="modal modal-fixed-footer">
   <div class="modal-content">
-    <h5>Factores de riesgo para osteoporosis secundaria<sup>2,3</sup></h5>
+    <h5>Risk factors for secondary osteoporosis<sup>2,3</sup></h5>
     <form>
       <br />
       <input name="fac" id="fac21" class="filled-in" type="checkbox" value="" />
-      <label for="fac21">Endocrinos: hipertiroidismo, hiperparatiroidismo, hipogonadismo, diabetes mellitus, enfermedad de Cushing, acromegalia, prolactinoma, insuficiencia adrenal.</label>
+      <label for="fac21">Endocrine: hyperthyroidism, hyperparathyroidism, hypogonadism, diabetes mellitus, Cushing's disease, acromegaly, prolactinoma, adrenal insufficiency.</label>
       <br />
       <br />
       <input name="fac" id="fac22" class="filled-in" type="checkbox" value="" />
-      <label for="fac22">Trastornos nutricionales y digestivos: enfermedad celíaca, enfermedad de colon irritable, desnutrición, baipás gástrico, enfermedad crónica del hígado, anorexia nerviosa.</label>
+      <label for="fac22">Nutritional and digestive disorders: celiac disease, irritable bowel disease, malnutrition, gastric bypass, chronic liver disease, anorexia nervosa.
+</label>
       <br />
       <br />
       <input name="fac" id="fac23" class="filled-in" type="checkbox" value="" />
-      <label for="fac23">Trastornos renales: enfermedad renal crónica, hipercalciuria idiopática.</label>
+      <label for="fac23">Kidney disorders: chronic kidney disease, idiopathic hypercalciuria.
+</label>
       <br />
       <input name="fac" id="fac24" class="filled-in" type="checkbox" value="" />
-      <label for="fac24">Trastornos reumatológicos: artritis reumatoide, espondilitis anquilosante, LES.</label>
+      <label for="fac24">Rheumatological disorders: rheumatoid arthritis, ankylosing spondylitis, SLE.
+</label>
       <br />
       <input name="fac" id="fac25" class="filled-in" type="checkbox" value="" />
-      <label for="fac25">Trastornos hematológicos: mieloma múltiple, talasemia, leucemia, linfoma, hemofilia, enfermedad de células falciformes, mastocitosis sistémica.</label>
+      <label for="fac25">Blood disorders: multiple myeloma, thalassemia, leukemia, lymphoma, hemophilia, sickle cell disease, systemic mastocytosis.</label>
       <br />
       <br />
       <input name="fac" id="fac26" class="filled-in" type="checkbox" value="" />
-      <label for="fac26">Trastornos genéticos: fibrosis quística, osteogénesis imperfecta, homocisteinuria, síndrome de Marfan, síndrome de Ehlers - Danlos, hemocromatosis.</label>
+      <label for="fac26">Genetic disorders: cystic fibrosis, osteogenesis imperfecta, homocystinuria, Marfan syndrome, Ehlers-Danlos syndrome, hemochromatosis.</label>
       <br />
       <br />
       <input name="fac" id="fac27" class="filled-in" type="checkbox" value="" />
-      <label for="fac27">Otros: porfiria, inmovilización, EPOC, nutrición parenteral.</label>
+      <label for="fac27">Other: porphyria, immobilization, COPD, parenteral nutrition.</label>
     </form>
   </div>
-  <div class="modal-footer"> <a href="#" class="modal-action modal-close waves-effect btn-flat ">Cerrar</a> <a href="#" onclick="$('#modal3').closeModal();$('#modal2').openModal();" class="modal-action waves-effect btn-flat">&lt; Anterior</a></div>
+  <div class="modal-footer"> <a href="#" class="modal-action modal-close waves-effect btn-flat ">Close</a> <a href="#" onclick="$('#modal3').closeModal();$('#modal2').openModal();" class="modal-action waves-effect btn-flat">&lt; Previous</a></div>
 </div>
 <!--</div>-->
 </body>

@@ -51,7 +51,7 @@ public class Calculadora extends Fragment implements View.OnClickListener, Adapt
     private int[] idXML;
     private TextView[] listResult = new TextView[5];
     //Load object
-    private General Obj_General;
+
     public Calculadora(){
 
         context=General.CONTEXT;
