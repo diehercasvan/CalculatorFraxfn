@@ -35,7 +35,6 @@ public class Execute_Files {
         String sRoute=sFile_Route+"/"+name_File;
 
         file=new File(sRoute);
-        //Toast.makeText(activity,"Esta es la ruta"+sFile_Route+" o esta"+name_File,Toast.LENGTH_LONG);
         if(file.exists()){
             if(typeDownload) {
                 Obj_Class_control.executeFile(sRoute, type);
@@ -65,13 +64,8 @@ public class Execute_Files {
             }
 
         }
+        
 
-        /* }
-       catch(Exception e)
-        {
-
-            Log.i("Create folder ","Error :"+e.getMessage());
-        }*/
     }
     //Connection to  validate
     public  boolean  ConnectionValidate(){
@@ -83,15 +77,15 @@ public class Execute_Files {
             bValidaConexion=true;
         }
         else if(connections.redConexion()==1){
-            JOptionPane.setTitle("Descarga de contenido");
-            JOptionPane.setMessage("Desea realizar  la  descarga ");
-            JOptionPane.setPositiveButton("Aceptar",new DialogInterface.OnClickListener() {
+            JOptionPane.setTitle("Downloadable Content");
+            JOptionPane.setMessage("You want downloading");
+            JOptionPane.setPositiveButton("Accept",new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     bValidaConexion=true;
                 }
             });
-            JOptionPane.setNegativeButton("Cancelar",new DialogInterface.OnClickListener() {
+            JOptionPane.setNegativeButton("Cancel",new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     bValidaConexion =false;
@@ -103,8 +97,8 @@ public class Execute_Files {
         }
         else if(connections.redConexion()==2){
 
-            JOptionPane.setTitle("Descarga de contenido");
-            JOptionPane.setMessage("Verifique  su  conexión de internet");
+            JOptionPane.setTitle("Downloadable content");
+            JOptionPane.setMessage("Check your internet connection");
             JOptionPane.create();
             JOptionPane.show();
             bValidaConexion=false;

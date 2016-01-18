@@ -346,4 +346,8 @@ Retrieved: 21 09 2015.
 
     //Dialog
     <string name="titleDialog">"Selection portions"</string>
+
+    //login
+    <string name="buttonAccept">Accept</string>
+    <string name="keyLogin">Enter the password</string>
 </resources>

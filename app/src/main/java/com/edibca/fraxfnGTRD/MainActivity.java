@@ -250,7 +250,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
                 position = 11;
                 sName_Route_Download="http://creative-med.com/AZ/Descargas_Android/Pdf/";
                 execute_files= new Execute_Files();
-                sName_Folder="info.pdf";
+                sName_Folder="infoEng.pdf";
                 execute_files.executeFiles(sName_Route_Download+sName_Folder, sName_Folder, true,true);
                 break;
 

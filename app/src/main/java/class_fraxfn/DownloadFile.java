@@ -50,12 +50,12 @@ public final class DownloadFile extends AsyncTask<String,String,String> {
     @Override
     protected void onPreExecute() {
         super.onPreExecute();
-        pDialog.setMessage("Descargando  contenido. Favor espere...");
+        pDialog.setMessage("Downloading content. Please wait...");
         pDialog.setIndeterminate(false);
         pDialog.setMax(100);
         pDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
         pDialog.setCancelable(false);
-        pDialog.setButton(DialogInterface.BUTTON_NEGATIVE, "Cancelar", new DialogInterface.OnClickListener() {
+        pDialog.setButton(DialogInterface.BUTTON_NEGATIVE, "Cancel", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 eliminarContenido(dataDirPath+"/"+nameArchive);
@@ -140,11 +140,11 @@ public final class DownloadFile extends AsyncTask<String,String,String> {
         AlertDialog alertDialog = new AlertDialog.Builder(mainActivity).create();
         if(bValidaDescarga && bValidaCancelar){
             // Setting Dialog Title
-            alertDialog.setTitle("Calculadora de riesgo ");
+            alertDialog.setTitle("Risk calculator");
             // Setting Dialog Message
-            alertDialog.setMessage("Descarga completa");
+            alertDialog.setMessage("Full download");
             // Setting OK Button
-            alertDialog.setButton("Aceptar", new DialogInterface.OnClickListener() {
+            alertDialog.setButton("Accept", new DialogInterface.OnClickListener() {
                 public void onClick(final DialogInterface dialog, final int which) {
 
                     clase_control= new Class_control(mainActivity);
@@ -155,11 +155,11 @@ public final class DownloadFile extends AsyncTask<String,String,String> {
         }
         else{
             // Setting Dialog Title
-            alertDialog.setTitle("Síndrome Coronario ");
+            alertDialog.setTitle("Risk calculator ");
             // Setting Dialog Message
-            alertDialog.setMessage("Error al  realizar la  descarga");
+            alertDialog.setMessage("Error downloading");
             // Setting OK Button
-            alertDialog.setButton("Aceptar", new DialogInterface.OnClickListener() {
+            alertDialog.setButton("Accept", new DialogInterface.OnClickListener() {
                 public void onClick(final DialogInterface dialog,final int which) {
 
 

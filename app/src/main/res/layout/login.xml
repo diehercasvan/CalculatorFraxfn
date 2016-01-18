@@ -29,7 +29,7 @@
                 android:id="@+id/textView9"
                 android:layout_margin="30dp"
                 android:fontFamily="@string/century"
-                android:textSize="25dip"
+                android:textSize="25sp"
                 android:textColor="#7178BA" />
 
             <EditText
@@ -38,7 +38,7 @@
                 android:inputType="textPassword"
                 android:ems="10"
                 android:fontFamily="@string/century"
-                android:hint="Ingrese la clave"
+                android:hint="@string/keyLogin"
                 android:id="@+id/editPassword"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="20dp"
@@ -48,7 +48,7 @@
             <Button
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="Acceder"
+                android:text="@string/buttonAccept"
                 android:id="@+id/btn_Login"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="40dp"

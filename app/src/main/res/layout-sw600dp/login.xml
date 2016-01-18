@@ -37,7 +37,7 @@
                 android:layout_height="40dp"
                 android:inputType="textPassword"
                 android:ems="10"
-                android:hint="Ingrese la clave"
+                android:hint="@string/keyLogin"
                 android:fontFamily="@string/century"
                 android:id="@+id/editPassword"
                 android:layout_gravity="center_horizontal"
@@ -48,7 +48,7 @@
             <Button
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="Acceder"
+                android:text="@string/buttonAccept"
                 android:id="@+id/btn_Login"
                 android:layout_gravity="center_horizontal"
                 android:layout_margin="40dp"

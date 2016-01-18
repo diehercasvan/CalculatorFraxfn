@@ -1,6 +1,6 @@
 <resources>
     <string name="century">fonts/century.ttf</string>
-    <string name="app_name">Calculadora FRAX</string>
+    <string name="app_name">FRAX calculator</string>
     <string name="login" >bonviva</string>
     <string name="texto_login">Ingrese  la clave  para acceder  a la aplicación</string>
     <string name="action_settings">Settings</string>
@@ -346,4 +346,7 @@ Consultado: 21 09 2015.
 
     //Dialog
     <string name="titleDialog">"Seleccion de porciones"</string>
+    //login
+    <string name="buttonAccept">Aceptar</string>
+    <string name="keyLogin">Ingrese la clave</string>
 </resources>
