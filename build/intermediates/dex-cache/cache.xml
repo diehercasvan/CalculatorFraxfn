@@ -2,172 +2,172 @@
 <items version="2" >
 
     <item
-        jar="F:\Android_proyectos\Fraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.0.0\jars\classes.jar"
+        jar="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.0.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="a96b762bde4139de855735f175ec4d17dca55a6d">
-        <dex dex="F:\Android_proyectos\Fraxfn\app\build\intermediates\pre-dexed\release\classes-a809cab9ebc7db59c2acef8f18a8f758c6df26d5.jar" />
+        sha1="1c5a76debf0c2857ccad422c4a80ed785982f8df">
+        <dex dex="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\pre-dexed\debug\classes-a6a5a43ab1b8b6317bc84c5cbdad29e649c06787.jar" />
     </item>
     <item
-        jar="F:\Android_proyectos\Fraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.0.0\jars\classes.jar"
+        jar="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="9224bc4c54ba95147c7eabd874573763c07cb6be">
-        <dex dex="F:\Android_proyectos\Fraxfn\app\build\intermediates\pre-dexed\release\classes-9022c6ff4e9bdff8a0819f7110650ecb5ff0a65e.jar" />
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\pre-dexed\debug\classes-6c75b2c7919d25f25b56fc2221062860f4620545.jar" />
     </item>
     <item
-        jar="C:\Users\Dell\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
+        jar="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.0.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
-        <dex dex="F:\Android_proyectos\Fraxfn\app\build\intermediates\pre-dexed\release\support-annotations-23.0.1-9b131cbf7e456a74f7e0e632d580ec7817aee5e3.jar" />
+        sha1="4cd0b093824b3228fffc21ea369b98d0b1db6566">
+        <dex dex="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\pre-dexed\debug\classes-14e01dfa02c6da012e7ca019a23acb8173a3ff35.jar" />
     </item>
     <item
-        jar="F:\Android_proyectos\Fraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.0.0\jars\classes.jar"
+        jar="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.0.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="17f8750d5c0749e44dd7c54aa390d9c937803825">
-        <dex dex="F:\Android_proyectos\Fraxfn\app\build\intermediates\pre-dexed\release\classes-b6ca5a2b299aed63e4dac7de8a4dec4fe58843f0.jar" />
+        sha1="73ccb92b70112f2e463e415ef8d7275de7da6516">
+        <dex dex="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\pre-dexed\debug\classes-c7725246bc51c71af7daf32b142ece77f4c8ff3c.jar" />
+    </item>
+    <item
+        jar="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="055783146ba9654a725442563be78cad303aad1f">
+        <dex dex="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\pre-dexed\debug\classes-22d02ff47ba5ddafc651c98380ef46226a7fbe7d.jar" />
+    </item>
+    <item
+        jar="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="3c0b099f9de16b265ecd6122fcb603e7d0d29f90">
+        <dex dex="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\pre-dexed\debug\classes-0381acae13d98be0f9755cfa1e3a27193d5e7dbc.jar" />
     </item>
     <item
         jar="C:\Users\Dell\.gradle\caches\modules-2\files-2.1\uk.co.chrisjenx\calligraphy\0.7.2\6a4194ce16b6e95e6294523d1068d484d1f48904\calligraphy-0.7.2.jar"
         jumboMode="false"
         revision="23.0.0"
         sha1="6a4194ce16b6e95e6294523d1068d484d1f48904">
-        <dex dex="F:\Android_proyectos\Fraxfn\app\build\intermediates\pre-dexed\release\calligraphy-0.7.2-6b7dfa0315d82849377e722946df5d8c5e75ea7e.jar" />
+        <dex dex="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\pre-dexed\debug\calligraphy-0.7.2-6b7dfa0315d82849377e722946df5d8c5e75ea7e.jar" />
     </item>
     <item
-        jar="F:\Android_proyectos\Fraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.0.0\jars\classes.jar"
+        jar="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.0.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="4c93d99d454c975536bbe3b42283eee847f03ea3">
-        <dex dex="F:\Android_proyectos\Fraxfn\app\build\intermediates\pre-dexed\release\classes-35c147fad36a5e41fd83bd2102092fb486a834c1.jar" />
+        sha1="9224bc4c54ba95147c7eabd874573763c07cb6be">
+        <dex dex="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\pre-dexed\debug\classes-704a993c21eedaf97ff2a9f33b8bb846ca2ded1f.jar" />
     </item>
     <item
-        jar="F:\Android_proyectos\Fraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.0.0\jars\classes.jar"
+        jar="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.0.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="3c0b099f9de16b265ecd6122fcb603e7d0d29f90">
-        <dex dex="F:\Android_proyectos\Fraxfn\app\build\intermediates\pre-dexed\release\classes-fd10c0044d3b93a2c5019751c73de177980b2e71.jar" />
+        sha1="a96b762bde4139de855735f175ec4d17dca55a6d">
+        <dex dex="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\pre-dexed\debug\classes-06b539ff8246390c27b77ec6f4c196e94c75849b.jar" />
     </item>
     <item
-        jar="F:\Android_proyectos\Fraxfn\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="F:\Android_proyectos\Fraxfn\app\build\intermediates\pre-dexed\release\classes-770e9b584edba60f6047bff97d866d1a8b5fe4ef.jar" />
-    </item>
-    <item
-        jar="F:\Android_proyectos\Fraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="73ccb92b70112f2e463e415ef8d7275de7da6516">
-        <dex dex="F:\Android_proyectos\Fraxfn\app\build\intermediates\pre-dexed\release\classes-00a422028785201e29b94f371de86af104e22a93.jar" />
-    </item>
-    <item
-        jar="F:\Android_proyectos\Fraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="1c5a76debf0c2857ccad422c4a80ed785982f8df">
-        <dex dex="F:\Android_proyectos\Fraxfn\app\build\intermediates\pre-dexed\release\classes-fc7ca13663481845220852c868cf87f1f563897d.jar" />
-    </item>
-    <item
-        jar="F:\Android_proyectos\Fraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="055783146ba9654a725442563be78cad303aad1f">
-        <dex dex="F:\Android_proyectos\Fraxfn\app\build\intermediates\pre-dexed\release\classes-770ca959077450a84352abee7b98bd23b10bc509.jar" />
-    </item>
-    <item
-        jar="F:\Android_proyectos\Fraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="c976518693e89ad44fbfccfc654941eaec198d08">
-        <dex dex="F:\Android_proyectos\Fraxfn\app\build\intermediates\pre-dexed\release\classes-d21912bfb58fe90fe93f2dc6cc87930f14ec508b.jar" />
-    </item>
-    <item
-        jar="F:\Android_proyectos\Fraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="29fd6d3794b71491c2789708cd8d03c71feb8954">
-        <dex dex="F:\Android_proyectos\Fraxfn\app\build\intermediates\pre-dexed\release\classes-c9d9b155868b61a1f6ad4d2e8fd0e9fdeb2a01c0.jar" />
-    </item>
-    <item
-        jar="F:\Android_proyectos\Fraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="ef5f051e7308febe289dc93c67c5f32785b4260a">
-        <dex dex="F:\Android_proyectos\Fraxfn\app\build\intermediates\pre-dexed\release\classes-ff8f52452c8c37ef64c89b445e2667aad80c7840.jar" />
-    </item>
-    <item
-        jar="F:\Android_proyectos\Fraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="fb04b12526b0073c7fb1ebb70c5842d82ee95596">
-        <dex dex="F:\Android_proyectos\Fraxfn\app\build\intermediates\pre-dexed\release\classes-19d23d2d796ee94c0b6b1c0f778f3d7ca6f96513.jar" />
-    </item>
-    <item
-        jar="F:\Android_proyectos\Fraxfn\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
-        <dex dex="F:\Android_proyectos\Fraxfn\app\build\intermediates\pre-dexed\release\internal_impl-23.0.1-beb1a94343b1ddc89b12bf769934757c0fd24e81.jar" />
-    </item>
-    <item
-        jar="F:\Android_proyectos\Fraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.0.0\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="a08d65794b844d8e7540bf9a33859bf3b2482d7f">
-        <dex dex="F:\Android_proyectos\Fraxfn\app\build\intermediates\pre-dexed\release\classes-abced6fe8651048d4d4abcbf5a40f5971030b13a.jar" />
-    </item>
-    <item
-        jar="F:\Android_proyectos\Fraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.0.0\jars\classes.jar"
+        jar="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.0.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.0"
         sha1="41b3870cbe5fa546d8095b5b89d42cb69f3dd175">
-        <dex dex="F:\Android_proyectos\Fraxfn\app\build\intermediates\pre-dexed\release\classes-06485d54f7f343eafb2c21371b9070c85c95f20c.jar" />
+        <dex dex="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\pre-dexed\debug\classes-f6c3e06347f7d61e9d7aca7a7adc58fdcfc07ce5.jar" />
     </item>
     <item
-        jar="F:\Android_proyectos\Fraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.0.0\jars\classes.jar"
+        jar="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.0.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="3033cc3a2c68dff3e5b646d6d084bdbdf7d00b25">
-        <dex dex="F:\Android_proyectos\Fraxfn\app\build\intermediates\pre-dexed\release\classes-e5792ae6a12eb93ff3a2a9c06c1f199e5665d7d3.jar" />
+        sha1="17f8750d5c0749e44dd7c54aa390d9c937803825">
+        <dex dex="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\pre-dexed\debug\classes-0decb301cc298e1c5a2042486b8111157e513721.jar" />
     </item>
     <item
-        jar="F:\Android_proyectos\Fraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.0.0\jars\classes.jar"
+        jar="C:\Users\Dell\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="7ff613bf78ab057293892fdbd4169eda899c89b9">
-        <dex dex="F:\Android_proyectos\Fraxfn\app\build\intermediates\pre-dexed\release\classes-5d852cf320b4fd626a5b8cc829974deabe6d6895.jar" />
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1-9b131cbf7e456a74f7e0e632d580ec7817aee5e3.jar" />
     </item>
     <item
-        jar="F:\Android_proyectos\Fraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.0.0\jars\classes.jar"
+        jar="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="e3d791b42eaa90416cd0b2d2e608092794a3baa4">
-        <dex dex="F:\Android_proyectos\Fraxfn\app\build\intermediates\pre-dexed\release\classes-57ef811e05b670362b9db61aee523f12b7152567.jar" />
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\pre-dexed\debug\classes-b242fed1194c99a98e33469e5080a280b17572e7.jar" />
     </item>
     <item
-        jar="F:\Android_proyectos\Fraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.0.0\jars\classes.jar"
+        jar="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.0.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="4cd0b093824b3228fffc21ea369b98d0b1db6566">
-        <dex dex="F:\Android_proyectos\Fraxfn\app\build\intermediates\pre-dexed\release\classes-7edeff700eebe382dba1d9edbbec643c0983692a.jar" />
+        sha1="c976518693e89ad44fbfccfc654941eaec198d08">
+        <dex dex="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\pre-dexed\debug\classes-19a2d45f4eeaf560d4e7a42d07c9752c41024ec6.jar" />
     </item>
     <item
-        jar="F:\Android_proyectos\Fraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.0.0\jars\classes.jar"
+        jar="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="fb04b12526b0073c7fb1ebb70c5842d82ee95596">
+        <dex dex="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\pre-dexed\debug\classes-5bad4209efa850846dd296db6132b54c8e3e3840.jar" />
+    </item>
+    <item
+        jar="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.0.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.0"
         sha1="0e8228b4bc69c6a2c8d7c18498a77e53417d2574">
-        <dex dex="F:\Android_proyectos\Fraxfn\app\build\intermediates\pre-dexed\release\classes-2ea88b031fb435c8f48b5c7a5469cb70cfe50f28.jar" />
+        <dex dex="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\pre-dexed\debug\classes-fd995df0e3339254271e074e60471441f4604b36.jar" />
     </item>
     <item
-        jar="F:\Android_proyectos\Fraxfn\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
+        jar="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.0.0\jars\classes.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
-        <dex dex="F:\Android_proyectos\Fraxfn\app\build\intermediates\pre-dexed\release\classes-50a7af28186f1690e866f604741cfc9ccbd6d34a.jar" />
+        sha1="3033cc3a2c68dff3e5b646d6d084bdbdf7d00b25">
+        <dex dex="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\pre-dexed\debug\classes-a082679410ad5ec6cd002699f3a35cb67bd87fc3.jar" />
+    </item>
+    <item
+        jar="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="ef5f051e7308febe289dc93c67c5f32785b4260a">
+        <dex dex="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\pre-dexed\debug\classes-9a31e43b4b81adfcc582ae1953c42c7e6da543c5.jar" />
+    </item>
+    <item
+        jar="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="e3d791b42eaa90416cd0b2d2e608092794a3baa4">
+        <dex dex="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\pre-dexed\debug\classes-a00619fcdd2e580ba66ae4950043c8fda4f4f4d4.jar" />
+    </item>
+    <item
+        jar="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="29fd6d3794b71491c2789708cd8d03c71feb8954">
+        <dex dex="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\pre-dexed\debug\classes-2067fc5b8ba537fc4ce006d66d98188868f05e19.jar" />
+    </item>
+    <item
+        jar="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="a08d65794b844d8e7540bf9a33859bf3b2482d7f">
+        <dex dex="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\pre-dexed\debug\classes-686424e52f8dcdb15ab51c44d638d0a799539821.jar" />
+    </item>
+    <item
+        jar="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="4c93d99d454c975536bbe3b42283eee847f03ea3">
+        <dex dex="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\pre-dexed\debug\classes-a43822af178bc6dd5e60e9bf5bc6223246b6ac10.jar" />
+    </item>
+    <item
+        jar="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="7ff613bf78ab057293892fdbd4169eda899c89b9">
+        <dex dex="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\pre-dexed\debug\classes-6e21bdb2a1a1a5f2697fa33ae8442f7361a1732b.jar" />
+    </item>
+    <item
+        jar="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="F:\Repositorios\Android\CalculatorFraxfn\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1-7ad4578ba92bc05eba14c6504b1f2b1c2f815c0b.jar" />
     </item>
 
 </items>
